@@ -1,0 +1,49 @@
+/* -------------------------------------------------------------------------- */
+/*              Make HTML more responsive (adapted from Fluidity)             */
+/* ------------------------|  http://fluidity.sexy  |------------------------ */
+img, canvas, iframe, video, svg, select, textarea { max-width: 100%; }
+
+/* -------------------------------------------------------------------------- */
+/*                   Box-model fix (adapted from CSS-Tricks)                  */
+/* ------------------|  https://css-tricks.com/box-sizing  |----------------- */
+html { box-sizing: border-box; } *, *:before, *:after { box-sizing: inherit; }
+
+/* -------------------------------------------------------------------------- */
+/*        Size text according to screen width (adapted from Grid.css)         */
+/* --------------------|  http://adamkaplan.me/grid  |----------------------- */
+html { font-size: 100%; }
+@media (min-width: 40rem) { html { font-size: 112%; } }
+@media (min-width: 65rem) { html { font-size: 120%; } }
+
+/* -------------------------------------------------------------------------- */
+/*      Improved typography (adapted from Better Motherfucking Website)       */
+/* ----------------|  http://bettermotherfuckingwebsite.com  |--------------- */
+h1, h2, h3, h4, h5, h6 { line-height: 1.2; }
+body { line-height: 1.6; color: #444; margin: 1em auto; max-width: 35em; }
+
+/* -------------------------------------------------------------------------- */
+/*               Code and table styles (adapted from Skeleton)                */
+/* -----------------------|  http://getskeleton.com  |----------------------- */
+pre, code {
+  padding: .2em; white-space: nowrap; background: #eee;
+  border: 1px solid #ddd; border-radius: 4px;
+}
+pre, pre > code { display: block; white-space: pre; }
+pre { padding-left: 0.5em; padding-right: 0.5em; }
+
+table { border-collapse: collapse; font-family: sans-serif; font-size: 90%; }
+th, td { padding: 0 0.75em; text-align: left; border-bottom: 1px solid #eee; }
+th { border-bottom-color: #ccc; }
+th:first-child, td:first-child { padding-left: 0; }
+th:last-child, td:last-child { padding-right: 0; }
+
+/* -------------------------------------------------------------------------- */
+/*                      Additional adjustments (my own)                       */
+/* --------------|  https://github.com/waldyrious/default.css  |------------- */
+img { margin: 0.5em; } /* ATTENTION: images won't align with text margins if they're floated, etc.) */
+nav ul { padding: inherit; }
+nav ul li { display: inline-block; list-style: none; padding-left: 0.5em; padding-right: 0.5em; }
+nav a:visited { color: RoyalBlue; }
+a { text-decoration: none; } a:hover { text-decoration: underline; }
+a { color: RoyalBlue; } a:visited { color: Indigo; }
+textarea { vertical-align: text-top; }
