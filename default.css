@@ -41,9 +41,6 @@ th:last-child, td:last-child { padding-right: 0; }
 /*                      Additional adjustments (my own)                         */
 /* ---------------------------------------------------------------------------- */
 img { margin: 0.5em; } /* ATTENTION: images won't align with text margins if they're floated, etc.) */
-nav ul { padding: inherit; }
-nav ul li { display: inline-block; list-style: none; padding-left: 0.5em; padding-right: 0.5em; }
-nav a:visited { color: RoyalBlue; }
 a { text-decoration: none; } a:hover { text-decoration: underline; }
 a { color: RoyalBlue; } a:visited { color: Indigo; }
 textarea { vertical-align: text-top; }
