@@ -12,7 +12,7 @@ html { box-sizing: border-box; } *, *:before, *:after { box-sizing: inherit; }
 /* Size text according to screen width (adapted from http://adamkaplan.me/grid) */
 /* ---------------------------------------------------------------------------- */
 html { font-size: 100%; }
-@media (min-width: 40rem) { h0tml { font-size: 112%; } }
+@media (min-width: 40rem) { html { font-size: 112%; } }
 @media (min-width: 65rem) { html { font-size: 120%; } }
 
 /* ---------------------------------------------------------------------------- */
