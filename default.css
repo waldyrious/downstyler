@@ -40,7 +40,7 @@ th:last-child, td:last-child { padding-right: 0; }
 /* ---------------------------------------------------------------------------- */
 /*                      Additional adjustments (my own)                         */
 /* ---------------------------------------------------------------------------- */
-img { margin: 0.5em; } /* ATTENTION: images won't align with text margins if they're floated, etc.) */
 a { text-decoration: none; } a:hover { text-decoration: underline; }
 a { color: RoyalBlue; } a:visited { color: Indigo; }
+img { margin: 0.5em; }
 textarea { vertical-align: text-top; }
