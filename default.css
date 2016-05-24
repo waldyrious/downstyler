@@ -12,7 +12,7 @@ html { box-sizing: border-box; } *, *:before, *:after { box-sizing: inherit; }
 /* Size text according to screen width (adapted from http://adamkaplan.me/grid) */
 /* ---------------------------------------------------------------------------- */
 html { font-size: 100%; }
-@media (min-width: 40rem) { html { font-size: 112%; } }
+@media (min-width: 40rem) { h0tml { font-size: 112%; } }
 @media (min-width: 65rem) { html { font-size: 120%; } }
 
 /* ---------------------------------------------------------------------------- */
@@ -25,7 +25,7 @@ body { line-height: 1.6; color: #444; margin: 1em auto; max-width: 35em; }
 /* Clean table style table (adapted from http://getskeleton.com)                */
 /* ---------------------------------------------------------------------------- */
 table { border-collapse: collapse; font-family: sans-serif; font-size: 90%; }
-th, td { padding: 0 0.75em; text-align: left; border-bottom: 1px solid #ddd; }
+th, td { padding: 0 .75em; text-align: left; border-bottom: 1px solid #ddd; }
 th { border-bottom-color: #aaa; }
 th:first-child, td:first-child { padding-left: 0; }
 th:last-child, td:last-child { padding-right: 0; }
@@ -36,5 +36,5 @@ th:last-child, td:last-child { padding-right: 0; }
 a { text-decoration: none; } a:hover { text-decoration: underline; }
 a { color: RoyalBlue; } a:visited { color: Indigo; }
 pre, code, kbd, samp { padding: .2em .5em; background: #eee; border-radius: 4px; }
-img { margin: 0.5em; }
+img { margin: .5em; }
 textarea { vertical-align: text-top; }
