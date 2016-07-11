@@ -14,18 +14,21 @@ or simply place the following in your HTML:
 
 ## Why yet another CSS framework/reset?
 
-This is not a CSS framework, nor it is a [reset]() or [normalize]().
-
-**`default.css`** is simply a small set of rules
-that instantly makes plain HTML look much more polished and readable.
+**`default.css`** has no pretension to be a comprehensive
+[reset](http://meyerweb.com/eric/tools/css/reset/)
+or [normalize](https://necolas.github.io/normalize.css/) stylesheet.
+It is simply a handful of CSS definitions that instantly make plain HTML
+look much more polished and readable.
 
 In short, its goal is to **improve upon HTML's default raw styling**.
 
-See for yourself: [before]() / [after]().
+See for yourself:
+[before](http://waldyrious.github.io/default.css/unstyled.xhtml) /
+[after](http://waldyrious.github.io/default.css).
 
 ## What's in it?
 
-Glad you asked! **`default.css`** combines a set of simple rulesets
+**`default.css`** combines a set of simple rulesets
 identified by a bunch of smart people
 who noticed how only a few minor tweaks to the default HTML styling
 are enough to produce massive improvements in legibility and layout.
@@ -33,7 +36,7 @@ are enough to produce massive improvements in legibility and layout.
 The entire stylesheet consists of only 20 rulesets,
 whose origin and motivation is detailed below:
 
-1. From **[Fluidity](http://fluidity.sexy)** by Adam Morse ([@mrmrs](https://github.com/mrmrs)):  
+1. From **[Fluidity](http://fluidity.sexy)**, by Adam Morse ([@mrmrs](https://github.com/mrmrs)):  
    Make HTML more responsive:
    > HTML is **almost** 100% responsive by default. These 247 bytes of css fix the 'almost' part.
 
@@ -44,7 +47,7 @@ whose origin and motivation is detailed below:
    to behave like the rest of the basic HTML elements
    like, say, paragraphs, which flow the text as the window resizes.
 
-2. From **[CSS Tricks](https://css-tricks.com/box-sizing)** by Marie Mosley ([@mariemosley](https://github.com/mariemosley)):  
+2. From **[CSS Tricks](https://css-tricks.com/box-sizing)**, by Marie Mosley ([@mariemosley](https://github.com/mariemosley)):  
    [Adjust the box model](https://en.wikipedia.org/wiki/Internet_Explorer_box_model_bug#Support_for_Internet_Explorer.27s_box_model)
    to match intuitive expectations  
    This ensures that when defining sizes of elements in CSS,
@@ -55,7 +58,7 @@ whose origin and motivation is detailed below:
    html { box-sizing: border-box; } *, *:before, *:after { box-sizing: inherit; }
    ```
    
-3. From **[Grid](http://adamkaplan.me/grid)** by Adam Kaplan ([@aekaplan](https://github.com/aekaplan)):  
+3. From **[Grid](http://adamkaplan.me/grid)**, by Adam Kaplan ([@aekaplan](https://github.com/aekaplan)):  
    Size text according to screen width
    ```css
    html { font-size: 100%; }
@@ -63,7 +66,7 @@ whose origin and motivation is detailed below:
    @media (min-width: 65rem) { html { font-size: 120%; } }
    ```
 
-4. From **[Better Motherfucking Website](http://bettermotherfuckingwebsite.com)** by Drew McConville ([@drewmcc](https://github.com/drewmcc)),
+4. From **[Better Motherfucking Website](http://bettermotherfuckingwebsite.com)**, by Drew McConville ([@drewmcc](https://github.com/drewmcc)),
    improved typography:
    > **Let it breathe**  
    > Look at lines 1 and 2 of some shitty website you're building. Assuming they're not married they probably shouldn't be humping.
@@ -83,7 +86,7 @@ whose origin and motivation is detailed below:
    It's quite opinionated, sure, and not right for every design -- but a much better default to start from.
    The only rule I didn't include was the font size, which is better handled by Grid above.
 
-5. From **[Skeleton](http://getskeleton.com)** by Dave Gamache ([@dhg](https://github.com/dhg)):  
+5. From **[Skeleton](http://getskeleton.com)**, by Dave Gamache ([@dhg](https://github.com/dhg)):  
    Clean table style:
    ```css
    table { border-collapse: collapse; font-family: sans-serif; font-size: 90%; }
