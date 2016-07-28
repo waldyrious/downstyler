@@ -35,7 +35,6 @@ th:last-child, td:last-child { padding-right: 0; }
 /* ----------------------------------------------------------------------------- */
 a { text-decoration: none; } a:hover { text-decoration: underline; }
 a { color: RoyalBlue; } a:visited { color: Indigo; }
-pre, code, kbd, samp { padding: 0 .3em; border-radius: .3em;
-                       background: #f8f8f8; border: 1px solid #ccc; }
+pre, code, kbd, samp { padding: 0 .3em; background: GhostWhite; border: 1px solid #ccc; }
 img { margin: .5em; }
 textarea { vertical-align: text-top; }
