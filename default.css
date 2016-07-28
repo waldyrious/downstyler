@@ -18,8 +18,8 @@ html { font-size: 100%; }
 /* ----------------------------------------------------------------------------- */
 /* Improved typography (adapted from http://bettermotherfuckingwebsite.com)      */
 /* ----------------------------------------------------------------------------- */
-h1, h2, h3, h4, h5, h6 { line-height: 1.2; letter-spacing: .03em; }
-body { line-height: 1.6; margin: 1em auto; max-width: 35em; }
+h1, h2, h3, h4, h5, h6 { font-family: sans-serif; line-height: 1.2; letter-spacing: .03em; }
+body { font-family: serif; line-height: 1.6; margin: 1em auto; max-width: 35em; }
 
 /* ----------------------------------------------------------------------------- */
 /* Improved contrast (adapted from http://jgthms.com/web-design-in-4-minutes/)   */
