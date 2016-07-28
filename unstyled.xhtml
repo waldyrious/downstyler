@@ -10,6 +10,7 @@
     color: silver;
     border-top: 1px dashed silver;
     padding: .5em;
+    margin-top: 2em;
     }</style>
   </head>
   <body>
@@ -37,10 +38,14 @@
       Vivamus velit sapien, volutpat eu, faucibus id, nonummy id, urna.
     </p>
     <p>
-      Lorem ipsum <em>emphasised text</em> dolor sit amet, <strong>strong text</strong> consectetur adipisicing elit, <abbr title="">abbreviated text</abbr> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut <q>quoted text</q> enim ad minim veniam, quis nostrud exercitation <a href="#">link text</a> ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Lorem ipsum <em>emphasised text</em> dolor sit amet, <strong>strong text</strong> consectetur adipisicing elit,
+      <abbr title="">abbreviated text</abbr> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Ut <q>quoted text</q> enim ad minim veniam, quis nostrud exercitation <a href="#">link text</a>
+      ullamco laboris nisi ut aliquip ex ea commodo consequat.
     </p>
     <p>
-      Duis aute <ins>inserted text</ins> irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat <code>code text</code> cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      Duis aute <ins>inserted text</ins> irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat <code>code text</code> cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
     <h2>Section Title</h2>
     <p>
@@ -244,38 +249,6 @@
     </p>
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <h2 class="highlight">Forms</h2>
-    <form action="#" method="post">
-      <div>
-        <label for="name">Text Input:</label>
-        <input type="text" name="name" id="name" value="" tabindex="1" />
-      </div>
-      <div>
-        <h4>Radio Button Choice</h4>
-        <label for="radio-choice-1">Choice 1</label>
-        <input type="radio" name="radio-choice-1" id="radio-choice-1" tabindex="2" value="choice-1" />
-        <label for="radio-choice-2">Choice 2</label>
-        <input type="radio" name="radio-choice-2" id="radio-choice-2" tabindex="3" value="choice-2" />
-      </div>
-      <div>
-        <label for="select-choice">Select Dropdown Choice:</label>
-        <select name="select-choice" id="select-choice">
-          <option value="Choice 1">Choice 1</option>
-          <option value="Choice 2">Choice 2</option>
-          <option value="Choice 3">Choice 3</option>
-        </select>
-      </div>
-      <div>
-        <label for="textarea">Textarea:</label>
-        <textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
-      </div>
-      <div>
-        <label for="checkbox">Checkbox:</label>
-        <input type="checkbox" name="checkbox" id="checkbox" />
-      </div>
-      <div>
-        <input type="submit" value="Submit" />
-      </div>
-    </form>
     <form method="post" action="#">
       <fieldset>
         <legend>Form</legend>
@@ -286,7 +259,7 @@
         <label for="Email">Email:</label>
         <input tabindex="3" id="Email" type="text" name="Email"/><br/>
         <label for="Message">Message:</label>
-        <textarea tabindex="4" id="Message" name="Message" rows="20" cols="20"></textarea><br/>
+        <textarea tabindex="4" id="Message" name="Message" rows="8" cols="40"></textarea><br/>
         <label for="Lorem">Message:</label>
         <select tabindex="5" id="Lorem" name="Lorem ipsum">
           <option selected="selected" value="1">Lorem ipsum</option>
