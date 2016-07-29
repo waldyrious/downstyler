@@ -1,6 +1,7 @@
 # default.css
 A sensible default HTML style in under 50 lines of CSS.
-Here's how it looks: **[live demo](http://waldyrious.github.io/default.css)**
+
+### [live demo](http://waldyrious.github.io/default.css)
 
 ## Usage
 
@@ -16,17 +17,24 @@ or simply place the following in your HTML:
 
 **`default.css`** has no pretension to be a comprehensive
 [reset](http://meyerweb.com/eric/tools/css/reset/)
-or [normalize](https://necolas.github.io/normalize.css/) stylesheet.
-It is simply a handful of CSS definitions that instantly make plain HTML
-look much more polished and readable.
+(which removes browsers' internal styles
+to provides a clean slate upon which a stylesheet can be built)
+or [normalize](https://necolas.github.io/normalize.css/)
+(which specifically targets cross-browser differences in styling
+in order to make HTML look and behave consistently everywhere).
 
-In short, its goal is to **improve upon HTML's default raw styling**.
+Instead, **`default.css`** aims to provide the very minimal set of CSS definitions
+that allow page authors to use plain HTML without additional styling
+while still getting readable and coherent output.
 
-See for yourself:
-[before](http://waldyrious.github.io/default.css/unstyled.xhtml) /
-[after](http://waldyrious.github.io/default.css).
+See for yourself how HTML looks
+[without any styling](http://waldyrious.github.io/default.css/unstyled.xhtml)
+vs.
+[using default.css](http://waldyrious.github.io/default.css).
 
-## What's in it?
+<!-- TODO: insert side-by-side screenshots here. -->
+
+## What styles are inlcuded?
 
 **`default.css`** combines a set of simple rulesets
 identified by a bunch of smart people
