@@ -45,5 +45,4 @@ th:last-child, td:last-child { padding-right: 0; }
 a { text-decoration: none; } a:hover { text-decoration: underline; }
 a { color: RoyalBlue; } a:visited { color: BlueViolet; }
 pre, code, kbd, samp { padding: 0 .3em; background: GhostWhite; border: 1px solid #ccc; }
-img { margin: .5em; }
 textarea { vertical-align: text-top; }
