@@ -22,7 +22,8 @@ html { font-size: 1rem; }
 /* ---------------------------------------------------------------------------------------------- */
 /* Improved typography (adapted from http://bettermotherfuckingwebsite.com)                       */
 /* ---------------------------------------------------------------------------------------------- */
-h1, h2, h3, h4, h5, h6 { font-family: sans-serif; line-height: 1.2; letter-spacing: .03em; }
+h1, h2, h3, h4, h5, h6 { font-family: Georgia, Century Schoolbook L, serif; letter-spacing: .03em;
+    line-height: 1.2; }
 body { font-family: serif; line-height: 1.5; margin: 0 auto; max-width: 35em; padding: 1em; }
 
 /* ---------------------------------------------------------------------------------------------- */
