@@ -2,6 +2,7 @@
 /* Make HTML more responsive (adapted from http://fluidity.sexy)                                  */
 /* ---------------------------------------------------------------------------------------------- */
 img, canvas, iframe, video, svg, select, textarea { max-width: 100%; }
+pre { overflow-x: auto; }
 
 /* ---------------------------------------------------------------------------------------------- */
 /* Restore normal viewport size on mobile browsers (www.w3.org/TR/css-device-adapt/)              */
@@ -47,7 +48,7 @@ a { text-decoration: none; } a:hover { text-decoration: underline; }
 a { color: RoyalBlue; } a:visited { color: BlueViolet; }
 pre, code, kbd, samp { padding: 0 .3em; margin: 0 .1em; font-size: 80%;
     background: GhostWhite; border: 1px solid #ccc; }
-pre > code { border: none; margin: 0; padding: 0; font-size: 100%; }
+pre > code { border: none; margin:p 0; padding: 0; font-size: 100%; }
 textarea { vertical-align: text-top; }
 textarea, input[type=text], input:not([type]) { font-family: monospace; font-size: 80%; }
 input[type] { font-family: sans-serif; font-size: 100%; }
