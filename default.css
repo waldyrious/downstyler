@@ -44,8 +44,8 @@ th:last-child, td:last-child { padding-right: 0; }
 /* ---------------------------------------------------------------------------------------------- */
 /* Additional adjustments (my own)                                                                */
 /* ---------------------------------------------------------------------------------------------- */
-a { text-decoration: none; } a:hover { text-decoration: underline; }
-a { color: RoyalBlue; } a:visited { color: BlueViolet; }
+a[href] { text-decoration: none; } a[href]:hover { text-decoration: underline; }
+a[href] { color: RoyalBlue; } a[href]:visited { color: BlueViolet; }
 pre, code, kbd, samp { padding: 0 .3em; margin: 0 .1em; font-size: 80%;
     background: GhostWhite; border: 1px solid #ccc; }
 pre > code { border: none; margin:p 0; padding: 0; font-size: 100%; }
