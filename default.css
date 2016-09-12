@@ -45,8 +45,7 @@ th:last-child, td:last-child { padding-right: 0; }
 /* ---------------------------------------------------------------------------------------------- */
 /* Additional adjustments (my own)                                                                */
 /* ---------------------------------------------------------------------------------------------- */
-a[href], a:active { text-decoration: none; }
-a[href]:hover, a[href]:active { text-decoration: underline; }
+a[href] { text-decoration: none; } a[href]:hover { text-decoration: underline; }
 a[href], a[href]>b, a[href]>strong { color: RoyalBlue; } /* override "improve contrast" (above) */
 a[href]:visited, a[href]:visited>b, a[href]:visited>strong { color: BlueViolet; }
 pre, code, kbd, samp { padding: 0 .3em; margin: 0 .1em; font-size: 80%;
