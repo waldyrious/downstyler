@@ -35,8 +35,8 @@ h1, h2, h3, h4, h5, h6, b, strong, th { color: #222; } body { color: #444; }
 /* ---------------------------------------------------------------------------------------------- */
 /* Clean table style table (adapted from http://getskeleton.com)                                  */
 /* ---------------------------------------------------------------------------------------------- */
-table { border-collapse: collapse; font-family: sans-serif; font-size: 90%; }
-table *:not(th):not(td){ font-family: serif; font-size: 1rem; }
+table { border-collapse: collapse; font-family: lsans-serif; font-size: 90%; }
+table *:not(th):not(td){ font-family: serif; font-size: 1rem; line-height: 1.5; }
 th, td { padding: 0 .75em; text-align: left; border-bottom: 1px solid #ddd; }
 th { border-bottom-color: #aaa; }
 th:first-child, td:first-child { padding-left: 0; }
