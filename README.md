@@ -1,9 +1,9 @@
 # default.css
-A sensible default HTML style in under 50 lines of CSS.
+A sensible minimal style for plain HTML in under 50 lines of CSS.
 
 ### [live demo](http://waldyrious.github.io/default.css)
 
-## Usage
+## How? (a.k.a. "Usage")
 
 To use **`default.css`** in your project,
 [download the source](https://raw.githubusercontent.com/waldyrious/default.css/master/default.css),
@@ -13,51 +13,67 @@ or simply place the following in your HTML:
 <link rel="stylesheet" href="http://rawgit.com/waldyrious/default.css/master/default.css" />
 ```
 
-## Why yet another CSS framework/reset?
+## Why? (a.k.a. "How is this different from existing tools?")
 
-**`default.css`** has no pretension to be a comprehensive
-[reset](http://meyerweb.com/eric/tools/css/reset/)
-(which removes browsers' internal styles
-to provides a clean slate upon which a stylesheet can be built)
-or [normalize](https://necolas.github.io/normalize.css/)
-(which specifically targets cross-browser differences in styling
-in order to make HTML look and behave consistently everywhere).
+**`default.css`** takes inspiration in pre-existing similar tools,
+but fills a different niche:
 
-Instead, **`default.css`** aims to provide the very minimal set of CSS definitions
-that allow page authors to use plain HTML without additional styling
-while still getting readable and coherent output.
+- The original [css reset](http://meyerweb.com/eric/tools/css/reset/)
+  unsets browsers' default styles
+  to provide a clean slate upon which a stylesheet can be built;
+- [normalize.css](https://necolas.github.io/normalize.css/)
+  specifically targets cross-browser differences in styling
+  and harmonizes them to provide consistent look and behavior everywhere;
+- [sanitize.css](https://jonathantneal.github.io/sanitize.css/)
+  actively attempts to provide a comprehensive set of defaults for HTML elements,
+  building upon normalize.css.
 
-See for yourself how HTML looks
+**`default.css`**, on the other hand,
+aims to provide a the smallest, most unintrusive set of CSS rules
+that remains as close as possible to the default styling
+while still getting readable and visually pleasing output.
+
+See for yourself how plain HTML markup looks
 [without any styling](http://waldyrious.github.io/default.css/unstyled.xhtml)
 vs.
 [using default.css](http://waldyrious.github.io/default.css).
 
 <!-- TODO: insert side-by-side screenshots here. -->
 
-## What styles are inlcuded?
+## What? (a.k.a. "Which styles are included?")
 
 **`default.css`** combines a set of simple rulesets
 identified by a bunch of smart people
 who noticed how only a few minor tweaks to the default HTML styling
-are enough to produce massive improvements in legibility and layout.
+can produce massive improvements in legibility and layout.
 
-The entire stylesheet consists of only 20 rulesets,
+The entire stylesheet consists of only ~25 rulesets,
 whose origin and motivation is detailed below:
 
-1. From **[Fluidity](http://fluidity.sexy)**, by Adam Morse ([@mrmrs](https://github.com/mrmrs)):  
+1. From **[Fluidity](http://fluidity.sexy)**,
+   by Adam Morse ([@mrmrs](https://github.com/mrmrs)):  
    Make HTML more responsive:
    > HTML is **almost** 100% responsive by default. These 247 bytes of css fix the 'almost' part.
 
    ```css
    img, canvas, iframe, video, svg, select, textarea { max-width: 100%; }
+   pre { overflow-x: auto; }
    ```
-   This rule allows elements that don't adjust to the size of the container by default
+   These rules allow elements that don't adjust to the size of the container by default
    to behave like the rest of the basic HTML elements
    like, say, paragraphs, which flow the text as the window resizes.
 
-2. From **[CSS Tricks](https://css-tricks.com/box-sizing)**, by Marie Mosley ([@mariemosley](https://github.com/mariemosley)):  
+2. From **[W3C's CSS Device Adaptation Module Level 1]
+   (https://www.w3.org/TR/css-device-adapt/#width-and-height-properties)**:
+   Restore normal viewport size on mobile browsers:
+   ```css
+   @viewport { width: device-width; initial-scale: 1; }
+   ```
+
+3. From **[CSS Tricks](https://css-tricks.com/box-sizing)**,
+   by Marie Mosley ([@mariemosley](https://github.com/mariemosley)):  
    [Adjust the box model](https://en.wikipedia.org/wiki/Internet_Explorer_box_model_bug#Support_for_Internet_Explorer.27s_box_model)
-   to match intuitive expectations  
+   to match intuitive expectations.  
    This ensures that when defining sizes of elements in CSS,
    they better match the mental model of a physical box,
    whose dimensions always refer to the box itself, including potential padding,
@@ -66,15 +82,18 @@ whose origin and motivation is detailed below:
    html { box-sizing: border-box; } *, *:before, *:after { box-sizing: inherit; }
    ```
    
-3. From **[Grid](http://adamkaplan.me/grid)**, by Adam Kaplan ([@aekaplan](https://github.com/aekaplan)):  
+4. From **[CSS Tricks](https://css-tricks.com/molten-leading-css/)**,
+   by Chris Coyier ([@chriscoyier](https://github.com/chriscoyier))
+   from an original idea by Tim Brown ([@tbrown](https://github.com/tbrown)):  
    Size text according to screen width
    ```css
-   html { font-size: 100%; }
-   @media (min-width: 40rem) { html { font-size: 112%; } }
-   @media (min-width: 65rem) { html { font-size: 120%; } }
+   html { font-size: 16px; }
+   @media (min-width: 600px) { html { font-size: calc(0.4vw + 13.6px) } }
    ```
+   These rules allow text to resize dynamically to adapt to the width of the container.
+   It's the same concept as [flowtype.js](http://simplefocus.com/flowtype/), but in CSS!
 
-4. From **[Better Motherfucking Website](http://bettermotherfuckingwebsite.com)**, by Drew McConville ([@drewmcc](https://github.com/drewmcc)),
+5. From **[Better Motherfucking Website](http://bettermotherfuckingwebsite.com)**, by Drew McConville ([@drewmcc](https://github.com/drewmcc)),
    improved typography:
    > **Let it breathe**  
    > Look at lines 1 and 2 of some shitty website you're building. Assuming they're not married they probably shouldn't be humping.
@@ -94,7 +113,7 @@ whose origin and motivation is detailed below:
    It's quite opinionated, sure, and not right for every design -- but a much better default to start from.
    The only rule I didn't include was the font size, which is better handled by Grid above.
 
-5. From **[Skeleton](http://getskeleton.com)**, by Dave Gamache ([@dhg](https://github.com/dhg)):  
+6. From **[Skeleton](http://getskeleton.com)**, by Dave Gamache ([@dhg](https://github.com/dhg)):  
    Clean table style:
    ```css
    table { border-collapse: collapse; font-family: sans-serif; font-size: 90%; }
@@ -104,7 +123,7 @@ whose origin and motivation is detailed below:
    th:last-child, td:last-child { padding-right: 0; }
    ```
 
-6. Additional adjustments (my own)
+7. Additional adjustments (my own)
    ```css
    a { text-decoration: none; } a:hover { text-decoration: underline; }
    a { color: RoyalBlue; } a:visited { color: Indigo; }
