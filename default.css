@@ -23,8 +23,8 @@ html { font-size: 16px; }
 /* ---------------------------------------------------------------------------------------------- */
 /* Improved typography (adapted from http://bettermotherfuckingwebsite.com)                       */
 /* ---------------------------------------------------------------------------------------------- */
-h1, h2, h3, h4, h5, h6 { font-family: Georgia, Century Schoolbook L, serif; letter-spacing: .03em;
-    line-height: 1.2; }
+h1, h2, h3, h4, h5, h6 { font-family: Georgia, 'Century Schoolbook L', serif; }
+h1, h2, h3, h4, h5, h6 { letter-spacing: .03em; line-height: 1.2; }
 body { font-family: serif; line-height: 1.5; margin: 0 auto; max-width: 35em; padding: 1em; }
 
 /* ---------------------------------------------------------------------------------------------- */
@@ -48,9 +48,9 @@ th:last-child, td:last-child { padding-right: 0; }
 a[href] { text-decoration: none; } a[href]:hover { text-decoration: underline; }
 a[href], a[href]>b, a[href]>strong { color: RoyalBlue; } /* override "improve contrast" (above) */
 a[href]:visited, a[href]:visited>b, a[href]:visited>strong { color: BlueViolet; }
-pre, code, kbd, samp { padding: 0 .3em; margin: 0 .1em; font-size: 80%;
-    background: GhostWhite; border: 1px solid #ccc; }
-pre > code { border: none; margin:p 0; padding: 0; font-size: 100%; }
+pre, code, kbd, samp { padding: 0 .3em; margin: 0 .1em; font-size: 80%; }
+pre, code, kbd, samp { background: GhostWhite; border: 1px solid #ccc; }
+pre > code { border: none; margin: 0; padding: 0; font-size: 100%; }
 textarea { vertical-align: text-top; }
 textarea, input[type=text], input:not([type]) { font-family: monospace; font-size: 80%; }
 input[type] { font-family: sans-serif; font-size: 100%; }
