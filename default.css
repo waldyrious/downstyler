@@ -30,7 +30,7 @@ body { font-family: serif; line-height: 1.5; margin: 0 auto; max-width: 35em; pa
 /* ---------------------------------------------------------------------------------------------- */
 /* Improved contrast (adapted from http://jgthms.com/web-design-in-4-minutes/)                    */
 /* ---------------------------------------------------------------------------------------------- */
-h1, h2, h3, h4, h5, h6, b, strong, th { color: #222; } body { color: #444; }
+h1, h2, h3, h4, h5, h6, b, strong, th { color: #222; } body { background: #fafaf0; color: #444; }
 
 /* ---------------------------------------------------------------------------------------------- */
 /* Clean table style table (adapted from http://getskeleton.com)                                  */
