@@ -1,21 +1,21 @@
-# default.css
+# unstyle
 A minimalistic styleshet for plain HTML.
 
-### [live demo](http://waldyrious.github.io/default.css)
+### [live demo](http://waldyrious.github.io/unstyle)
 
 ## Usage
 
-To use **`default.css`** in your project,
-[download the stylesheet](https://raw.githubusercontent.com/waldyrious/default.css/master/default.css),
+To use **`unstyle`** in your project,
+[download the stylesheet](https://raw.githubusercontent.com/waldyrious/unstyle/master/unstyle.css),
 or simply place the following in your HTML:
 
 ```html
-<link rel="stylesheet" href="http://rawgit.com/waldyrious/default.css/master/default.css" />
+<link rel="stylesheet" href="http://rawgit.com/waldyrious/unstyle.css/master/unstyle.css" />
 ```
 
 ## Differences from existing tools
 
-**`default.css`** takes inspiration in pre-existing similar tools,
+**`unstyle`** takes inspiration in pre-existing similar tools,
 but fills a different niche:
 
 - The original [css reset](http://meyerweb.com/eric/tools/css/reset/)
@@ -28,21 +28,21 @@ but fills a different niche:
   is a comprehensive stylesheet that builds upon normalize.css,
   and provides a consistent look-and-feel for HTML elements.
 
-**`default.css`**, on the other hand,
+**`unstyle`**, on the other hand,
 aims to provide a the smallest, least intrusive set of CSS rules
 that remains as close as possible to the default look of unstyled HTML,
 while still getting readable and visually pleasing output.
 
 Here's a live comparison of how plain HTML markup looks
-[without any styling](http://waldyrious.github.io/default.css/unstyled.xhtml)
+[without any styling](http://waldyrious.github.io/unstyle/raw.xhtml)
 vs.
-[using default.css](http://waldyrious.github.io/default.css).
+[using unstyle](http://waldyrious.github.io/unstyle).
 
 <!-- TODO: insert side-by-side screenshots here. -->
 
 ## Details of included CSS rules
 
-**`default.css`** combines elements from various simple rulesets
+**`unstyle`** combines elements from various simple rulesets
 created to demonstrate how only a few minor tweaks to the default HTML styling
 can produce massive improvements in legibility and layout.
 
