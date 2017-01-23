@@ -10,7 +10,7 @@ To use **`unstyle`** in your project,
 or simply place the following in your HTML:
 
 ```html
-<link rel="stylesheet" href="http://rawgit.com/waldyrious/unstyle.css/master/unstyle.css" />
+<link rel="stylesheet" href="http://rawgit.com/waldyrious/unstyle/master/unstyle.css" />
 ```
 
 ## Differences from existing tools
