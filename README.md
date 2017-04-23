@@ -31,10 +31,13 @@ and [BetterMotherfuckingWebsite.com](http://bettermotherfuckingwebsite.com),
 which (with various degrees of —ahem— enthusiasm)
 praise the merits of plain HTML as a format for rich documents.
 
-Here's a live comparison of how plain HTML markup looks
+Here's a live comparison of how plain a variety of HTML markup looks
 [without any styling](http://waldyrious.github.io/unstyle/demo-raw.xhtml)
-vs.
-[using unstyle](http://waldyrious.github.io/unstyle/demo-unstyle.xhtml).
+and using:
+- [reset](http://waldyrious.github.io/unstyle/demo-reset.xhtml)
+- [sanitize](http://waldyrious.github.io/unstyle/demo-sanitize.xhtml)
+- [normalize](http://waldyrious.github.io/unstyle/demo-normalize.xhtml)
+- [unstyle](http://waldyrious.github.io/unstyle/demo-unstyle.xhtml)
 
 <!-- TODO: insert side-by-side screenshots here. -->
 
