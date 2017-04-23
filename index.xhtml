@@ -1,0 +1,87 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Unstyle: a tool to fight CSS bloat</title>
+    <link rel="stylesheet" href="http://rawgit.com/waldyrious/unstyle/master/unstyle.css" />
+    <style>
+      body {
+        text-align: center;
+      }
+      .subtitle {
+        color: grey;
+        font-size: 1.3em;
+        font-style: italic;
+      }
+      #bookmarklet {
+        font-weight: bold;
+        font-size: large;
+        display: block;
+        font-family: sans-serif;
+        text-align: center;
+        margin: 2em;
+      }
+      #bookmarklet a {
+        border: 1px solid silver;
+        border-radius: 0.3em;
+        background-color: #eee;
+        padding: 0.3em;
+      }
+      pre.highlight {
+        text-align: left;
+        color: SteelBlue;
+      }
+      pre.highlight .str {
+        color: Coral;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Unstyle</h1>
+    <p class="subtitle">
+      A tool to fight CSS bloat.
+    </p>
+    <p>
+      Learn more in the <a href="https://github.com/waldyrious/unstyle#readme">README</a>.
+    </p>
+    <h2>Usage</h2>
+    <strong id="bookmarklet">
+      <a href="javascript:document.body.removeAttribute('background');
+        for(ss of document.styleSheets){void(ss.disabled=true)}
+        for(el of document.getElementsByTagName('*')){void(el.style.cssText='');void(el.removeAttribute('bgColor'));}
+        for(t of document.getElementsByTagName('table')){t.border=0}
+        for(f of document.getElementsByTagName('font')){f.removeAttribute('size');f.removeAttribute('face');f.removeAttribute('color')}
+        document.head.insertAdjacentHTML('beforeend',
+          '&lt;link rel=&quot;stylesheet&quot; href=&quot;'+
+            (window.location.protocol.startsWith('http')?window.location.protocol:'http:')+
+            '//rawgit.com/waldyrious/unstyle/master/unstyle.css'+
+          '&quot; /&gt;'
+        )">unstyle!</a>
+    </strong>
+    <p>
+      Just drag the link above to your browser's bookmarks toolbar.
+      <br />
+      You can then use it to instantly unstyle any page on the web.<!--
+      --><span title="Beware: this will expose some pretty broken layouts that were camouflaged with CSS!">*</span>
+      <br />
+      (Hint: click the link to try it on this page!)
+    </p>
+    <p>
+      <strong>Unstyle</strong> can also be used as a regular stylesheet.
+      <br />
+      Download 
+      <a href="https://raw.githubusercontent.com/waldyrious/unstyle/master/unstyle.css">unstyle.css</a>,
+      or include the following line in your HTML:
+      <br />
+      <pre class="highlight">&lt;link rel=<span class="str">"stylesheet"</span><br/><!--
+      -->href=<span class="str">"http://rawgit.com/waldyrious/unstyle/master/unstyle.css"</span> /&gt;</pre>
+    </p>
+    <h2>Demo</h2>
+    <p>
+      For a more comprehensive demonstration of how pages using unstyle look like,
+      <br/>
+      compare <a href="demo-raw.xhtml">this demo page using no styling at all</a>,
+      with <a href="demo-unstyle.xhtml">the same page using unstyle</a>.
+    </p>
+  </body>
+</html>

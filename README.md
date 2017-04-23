@@ -1,17 +1,9 @@
 # unstyle
-A minimalistic styleshet for plain HTML.
 
-### [live demo](http://waldyrious.github.io/unstyle/demo-unstyle.xhtml)
+A tool to fight CSS bloat.
 
-## Usage
-
-To use **`unstyle`** in your project,
-[download the stylesheet](https://raw.githubusercontent.com/waldyrious/unstyle/master/unstyle.css),
-or simply place the following in your HTML:
-
-```html
-<link rel="stylesheet" href="http://rawgit.com/waldyrious/unstyle/master/unstyle.css" />
-```
+**Visit [the web page](http://waldyrious.github.io/unstyle)**
+for a live demo and usage instructions.
 
 ## Differences from existing tools
 
