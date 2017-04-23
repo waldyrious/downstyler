@@ -39,6 +39,12 @@ and using:
 - [normalize](http://waldyrious.github.io/unstyle/demo-normalize.xhtml)
 - [unstyle](http://waldyrious.github.io/unstyle/demo-unstyle.xhtml)
 
+It's also worth comparing the outputs of unstyle
+and [BetterMotherfuckingWebsite](http://waldyrious.github.io/unstyle/demo-bettermfwebsite.xhtml).
+Particularly, note the differences in the `<table>`, `<blockquote>`, `<pre>` and `<form>` elements.
+These demonstrate unstyle's goal of providing a stand-alone stylesheet for 99% of HTML content,
+while remaining quite close to near-unstlyled HTML.
+
 <!-- TODO: insert side-by-side screenshots here. -->
 
 ## Details of included CSS rules
