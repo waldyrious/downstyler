@@ -11,19 +11,25 @@ for a live demo and usage instructions.
 but fills a different niche:
 
 - The original [css reset](http://meyerweb.com/eric/tools/css/reset/)
-  unsets browsers' default styles to provide a clean slate
-  upon which custom stylesheets can be built;
+  completely wipes out all of the browser's default styles
+  to provide a clean slate upon which custom stylesheets can be built;
 - [normalize.css](https://necolas.github.io/normalize.css/)
-  specifically targets cross-browser styling differences
-  and harmonizes them to provide consistent look and behavior everywhere;
+  is much less drastic, and focuses on ironing out cross-browser styling differences
+  and harmonizing them to provide consistent look and behavior everywhere;
 - [sanitize.css](https://jonathantneal.github.io/sanitize.css/)
-  is a comprehensive stylesheet that builds upon normalize.css,
-  and provides a consistent look-and-feel for HTML elements.
+  is kind of a more comprehensive version of normalize.css, covering all HTML elements,
+  but using hand-picked default styles, rather than reset.css's nuclear approach.
 
-**`unstyle`**, on the other hand,
-aims to provide a the smallest, least intrusive set of CSS rules
-that remains as close as possible to the default look of unstyled HTML,
-while still getting readable and visually pleasing output.
+**`unstyle`**, on the other hand, is intended as a stand-alone style
+— one that pays homage to HTML's natural readability and flexibility
+and attempts to produce readable and visually pleasing output
+while remaining as close as possible to the default look of unstyled HTML.
+
+It follows the philosophy brilliantly championed by [Fluidity](http://fluidity.sexy),
+[MotherfuckingWebsite.com](http://motherfuckingwebsite.com)
+and [BetterMotherfuckingWebsite.com](http://bettermotherfuckingwebsite.com),
+which (with various degrees of —ahem— enthusiasm)
+praise the merits of plain HTML as a format for rich documents.
 
 Here's a live comparison of how plain HTML markup looks
 [without any styling](http://waldyrious.github.io/unstyle/demo-raw.xhtml)
