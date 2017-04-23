@@ -1,7 +1,7 @@
 # unstyle
 A minimalistic styleshet for plain HTML.
 
-### [live demo](http://waldyrious.github.io/unstyle)
+### [live demo](http://waldyrious.github.io/unstyle/demo-unstyle.xhtml)
 
 ## Usage
 
@@ -34,9 +34,9 @@ that remains as close as possible to the default look of unstyled HTML,
 while still getting readable and visually pleasing output.
 
 Here's a live comparison of how plain HTML markup looks
-[without any styling](http://waldyrious.github.io/unstyle/raw.xhtml)
+[without any styling](http://waldyrious.github.io/unstyle/demo-raw.xhtml)
 vs.
-[using unstyle](http://waldyrious.github.io/unstyle).
+[using unstyle](http://waldyrious.github.io/unstyle/demo-unstyle.xhtml).
 
 <!-- TODO: insert side-by-side screenshots here. -->
 
