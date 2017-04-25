@@ -54,7 +54,7 @@ pre > code { border: none; margin: 0; padding: 0; font-size: 100%; }
 textarea { vertical-align: text-top; }
 textarea, input[type=text], input:not([type]) { font-family: monospace; font-size: 80%; }
 input[type] { font-family: sans-serif; font-size: 100%; }
-blockquote { padding-left: 1em; margin-left: 0; border-left: 5px solid #ddd; }
+blockquote { padding-left: 1em; margin-left: 0; border-left: 5px solid #ddd; color: #666; }
 
 /* ---------------------------------------------------------------------------------------------- */
 /* Logarithmic size scale for headings (https://github.com/waldyrious/unstyle/issues/30)          */
