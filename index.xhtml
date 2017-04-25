@@ -14,18 +14,15 @@
         font-style: italic;
       }
       #bookmarklet {
-        font-weight: bold;
-        font-size: large;
-        display: block;
         font-family: sans-serif;
-        text-align: center;
-        margin: 2em;
+        line-height: 2em;
       }
       #bookmarklet a {
         border: 1px solid silver;
         border-radius: 0.3em;
         background-color: #eee;
         padding: 0.3em;
+        margin: 0.5em;
       }
       pre.highlight {
         text-align: left;
@@ -71,7 +68,8 @@
       Alternative bookmarklets are available for a sans-serif mode,
       <br/>
       as well as a "readability mode" that emulates a paper sheet:
-      <br/>
+    </p>
+    <p>
       <strong id="bookmarklet">
         <a href="javascript:document.body.removeAttribute('background');
           for(ss of document.styleSheets){void(ss.disabled=true)}
@@ -88,7 +86,7 @@
             '&lt;style&gt;
               body { font-family: sans-serif; font-weight: 300; }
             &lt;/style&gt;'
-          )">unstyle+sans</a> —
+          )">unstyle+sans</a>
         <a href="javascript:document.body.removeAttribute('background');
           for(ss of document.styleSheets){void(ss.disabled=true)}
           for(el of document.getElementsByTagName('*')){void(el.style.cssText='');void(el.removeAttribute('bgColor'));}
@@ -105,7 +103,7 @@
               html { background: grey; }
               body { background: white; max-width: 40em; padding: 1em 5em; margin: 10px auto; border-radius: 2px; text-align: justify; }
             &lt;/style&gt;'
-          )">unstyle+read</a> —
+          )">unstyle+read</a>
         <a href="javascript:document.body.removeAttribute('background');
           for(ss of document.styleSheets){void(ss.disabled=true)}
           for(el of document.getElementsByTagName('*')){void(el.style.cssText='');void(el.removeAttribute('bgColor'));}
@@ -139,7 +137,7 @@
     </p>
     <h2>Demo</h2>
     <p>
-      For a more comprehensive demonstration of how pages using unstyle look like,
+      For a more com&#173;pre&#173;hen&#173;sive dem&#173;on&#173;stra&#173;tion of how pages using unstyle look like,
       <br/>
       compare <a href="demo-raw.xhtml">this demo page using no styling at all</a>,
       with <a href="demo-unstyle.xhtml">the same page using unstyle</a>.
