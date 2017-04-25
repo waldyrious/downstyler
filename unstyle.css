@@ -23,7 +23,7 @@ html { font-size: 16px; }
 /* ---------------------------------------------------------------------------------------------- */
 /* Improved typography (adapted from http://bettermotherfuckingwebsite.com)                       */
 /* ---------------------------------------------------------------------------------------------- */
-h1, h2, h3, h4, h5, h6 { font-size: 160%; margin-top: 1em; margin-bottom: 0.5em; }
+h1, h2, h3, h4, h5, h6 { margin-top: 1em; margin-bottom: 0.5em; }
 body { line-height: 1.5; margin: 0 auto; max-width: 35em; padding: 1em; }
 
 /* ---------------------------------------------------------------------------------------------- */
@@ -55,3 +55,13 @@ textarea { vertical-align: text-top; }
 textarea, input[type=text], input:not([type]) { font-family: monospace; font-size: 80%; }
 input[type] { font-family: sans-serif; font-size: 100%; }
 blockquote { padding-left: 1em; margin-left: 0; border-left: 5px solid #ddd; }
+
+/* ---------------------------------------------------------------------------------------------- */
+/* Logarithmic size scale for headings (https://github.com/waldyrious/unstyle/issues/30)          */
+/* ---------------------------------------------------------------------------------------------- */
+h1 { font-size: 200.00%; /* 2^(5/5) = 2^1 = 2 */ }
+h2 { font-size: 174.11%; /* 2^(4/5) */ }
+h3 { font-size: 151.57%; /* 2^(3/5) */ }
+h4 { font-size: 131.95%; /* 2^(2/5) */ }
+h5 { font-size: 114.87%; /* 2^(1/5) */ }
+h6 { font-size: 100.00%; /* 2^(0/5) = 2^0 = 1 */ }
