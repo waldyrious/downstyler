@@ -66,6 +66,67 @@
       <br />
       (Hint: click the link to try it on this page!)
     </p>
+    <p>✻</p>
+    <p>
+      Alternative bookmarklets are available for a sans-serif mode,
+      <br/>
+      as well as a "readability mode" that emulates a paper sheet:
+      <br/>
+      <strong id="bookmarklet">
+        <a href="javascript:document.body.removeAttribute('background');
+          for(ss of document.styleSheets){void(ss.disabled=true)}
+          for(el of document.getElementsByTagName('*')){void(el.style.cssText='');void(el.removeAttribute('bgColor'));}
+          for(t of document.getElementsByTagName('table')){t.border=0}
+          for(f of document.getElementsByTagName('font')){f.removeAttribute('size');f.removeAttribute('face');f.removeAttribute('color')}
+          document.head.insertAdjacentHTML('beforeend',
+            '&lt;link rel=&quot;stylesheet&quot; href=&quot;'+
+              (window.location.protocol.startsWith('http')?window.location.protocol:'http:')+
+              '//rawgit.com/waldyrious/unstyle/master/unstyle.css'+
+            '&quot; /&gt;'
+          );
+          document.head.insertAdjacentHTML('beforeend',
+            '&lt;style&gt;
+              body { font-family: sans-serif; font-weight: 300; }
+            &lt;/style&gt;'
+          )">unstyle+sans</a> —
+        <a href="javascript:document.body.removeAttribute('background');
+          for(ss of document.styleSheets){void(ss.disabled=true)}
+          for(el of document.getElementsByTagName('*')){void(el.style.cssText='');void(el.removeAttribute('bgColor'));}
+          for(t of document.getElementsByTagName('table')){t.border=0}
+          for(f of document.getElementsByTagName('font')){f.removeAttribute('size');f.removeAttribute('face');f.removeAttribute('color')}
+          document.head.insertAdjacentHTML('beforeend',
+            '&lt;link rel=&quot;stylesheet&quot; href=&quot;'+
+              (window.location.protocol.startsWith('http')?window.location.protocol:'http:')+
+              '//rawgit.com/waldyrious/unstyle/master/unstyle.css'+
+            '&quot; /&gt;'
+          );
+          document.head.insertAdjacentHTML('beforeend',
+            '&lt;style&gt;
+              html { background: grey; }
+              body { background: white; max-width: 40em; padding: 1em 5em; margin: 10px auto; border-radius: 2px; text-align: justify; }
+            &lt;/style&gt;'
+          )">unstyle+read</a> —
+        <a href="javascript:document.body.removeAttribute('background');
+          for(ss of document.styleSheets){void(ss.disabled=true)}
+          for(el of document.getElementsByTagName('*')){void(el.style.cssText='');void(el.removeAttribute('bgColor'));}
+          for(t of document.getElementsByTagName('table')){t.border=0}
+          for(f of document.getElementsByTagName('font')){f.removeAttribute('size');f.removeAttribute('face');f.removeAttribute('color')}
+          document.head.insertAdjacentHTML('beforeend',
+            '&lt;link rel=&quot;stylesheet&quot; href=&quot;'+
+              (window.location.protocol.startsWith('http')?window.location.protocol:'http:')+
+              '//rawgit.com/waldyrious/unstyle/master/unstyle.css'+
+            '&quot; /&gt;'
+          );
+          document.head.insertAdjacentHTML('beforeend',
+            '&lt;style&gt;
+              html { background: grey; }
+              body { background: white; padding: 1em 5em; margin: 10px auto; border-radius: 2px; text-align: justify; }
+              body { font-family: sans-serif; font-weight: 300; }
+            &lt;/style&gt;'
+          )">unstyle+read+sans</a>
+      </strong>
+    </p>
+    <p>✻</p>
     <p>
       <strong>Unstyle</strong> can also be used as a regular stylesheet.
       <br />
