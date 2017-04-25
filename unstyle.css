@@ -23,14 +23,13 @@ html { font-size: 16px; }
 /* ---------------------------------------------------------------------------------------------- */
 /* Improved typography (adapted from http://bettermotherfuckingwebsite.com)                       */
 /* ---------------------------------------------------------------------------------------------- */
-h1, h2, h3, h4, h5, h6 { font-family: Georgia, 'Century Schoolbook L', serif; }
-h1, h2, h3, h4, h5, h6 { letter-spacing: .03em; line-height: 1.2; margin: 1em 0 0.5em 0; }
-body { font-family: serif; line-height: 1.5; margin: 0 auto; max-width: 35em; padding: 1em; }
+h1, h2, h3, h4, h5, h6 { font-size: 160%; margin-top: 1em; margin-bottom: 0.5em; }
+body { line-height: 1.5; margin: 0 auto; max-width: 35em; padding: 1em; }
 
 /* ---------------------------------------------------------------------------------------------- */
 /* Improved contrast (adapted from http://jgthms.com/web-design-in-4-minutes/)                    */
 /* ---------------------------------------------------------------------------------------------- */
-h1, h2, h3, h4, h5, h6, b, strong, th { color: #222; } body { color: #444; }
+h1, h2, h3, h4, h5, h6, b, strong, th { color: #222; } body { color: #333; }
 
 /* ---------------------------------------------------------------------------------------------- */
 /* Clean table style table (adapted from http://getskeleton.com)                                  */
@@ -45,6 +44,7 @@ th:last-child, td:last-child { padding-right: 0; }
 /* ---------------------------------------------------------------------------------------------- */
 /* Additional adjustments (my own)                                                                */
 /* ---------------------------------------------------------------------------------------------- */
+body { font-family: 'Book Antiqua', 'Palatino', 'Palatino Linotype', 'URW Palladio L', serif; }
 a[href] { text-decoration: none; } a[href]:hover { text-decoration: underline; }
 a[href], a[href]>b, a[href]>strong { color: RoyalBlue; } /* override "improve contrast" (above) */
 a[href]:visited, a[href]:visited>b, a[href]:visited>strong { color: BlueViolet; }
