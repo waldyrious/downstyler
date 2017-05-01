@@ -45,9 +45,9 @@
     <strong id="bookmarklet">
       <a href="javascript:document.body.removeAttribute('background');
         for(ss of document.styleSheets){void(ss.disabled=true)}
-        for(el of document.getElementsByTagName('*')){void(el.style.cssText='');void(el.removeAttribute('bgColor'));}
-        for(t of document.getElementsByTagName('table')){t.border=0}
-        for(f of document.getElementsByTagName('font')){f.removeAttribute('size');f.removeAttribute('face');f.removeAttribute('color')}
+        for(el of document.getElementsByTagName('*')){void(el.removeAttribute('style'));void(el.removeAttribute('bgColor'));}
+        for(tb of document.getElementsByTagName('table')){tb.border=0}
+        for(ft of document.getElementsByTagName('font')){for(at of ft.attributes){ft.removeAttribute(at.name);}}
         document.head.insertAdjacentHTML('beforeend',
           '&lt;link rel=&quot;stylesheet&quot; href=&quot;'+
             (window.location.protocol.startsWith('http')?window.location.protocol:'http:')+
