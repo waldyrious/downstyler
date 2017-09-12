@@ -1,13 +1,13 @@
-# unstyle
+# Downstyle
 
 A tool to fight CSS bloat.
 
-**Visit [the web page](http://waldyrious.github.io/unstyle)**
+**Visit [the web page](http://waldyrious.github.io/downstyle)**
 for a live demo and usage instructions.
 
 ## Differences from existing tools
 
-**`unstyle`** takes inspiration in pre-existing similar tools,
+**Downstyle** takes inspiration in pre-existing similar tools,
 but fills a different niche:
 
 - The original [css reset](http://meyerweb.com/eric/tools/css/reset/)
@@ -20,10 +20,10 @@ but fills a different niche:
   is kind of a more comprehensive version of normalize.css, covering all HTML elements,
   but using hand-picked default styles, rather than reset.css's nuclear approach.
 
-**`unstyle`**, on the other hand, is intended as a stand-alone style
+**Downstyle**, on the other hand, is intended as a stand-alone style
 — one that pays homage to HTML's natural readability and flexibility
 and attempts to produce readable and visually pleasing output
-while remaining as close as possible to the default look of unstyled HTML.
+while remaining faithful to the default look of unstyled HTML.
 
 It follows the philosophy brilliantly championed by [Fluidity](http://fluidity.sexy),
 [MotherfuckingWebsite.com](http://motherfuckingwebsite.com)
@@ -32,24 +32,24 @@ which (with various degrees of —ahem— enthusiasm)
 praise the merits of plain HTML as a format for rich documents.
 
 Here's a live comparison of how plain a variety of HTML markup looks
-[without any styling](http://waldyrious.github.io/unstyle/demo-raw.xhtml)
+[without any styling](http://waldyrious.github.io/downstyle/demo-raw.xhtml)
 and using:
-- [reset](http://waldyrious.github.io/unstyle/demo-reset.xhtml)
-- [sanitize](http://waldyrious.github.io/unstyle/demo-sanitize.xhtml)
-- [normalize](http://waldyrious.github.io/unstyle/demo-normalize.xhtml)
-- [unstyle](http://waldyrious.github.io/unstyle/demo-unstyle.xhtml)
+- [reset](http://waldyrious.github.io/downstyle/demo-reset.xhtml)
+- [sanitize](http://waldyrious.github.io/downstyle/demo-sanitize.xhtml)
+- [normalize](http://waldyrious.github.io/downstyle/demo-normalize.xhtml)
+- [downstyle](http://waldyrious.github.io/downstyle/demo-downstyle.xhtml)
 
-It's also worth comparing the outputs of unstyle
-and [BetterMotherfuckingWebsite](http://waldyrious.github.io/unstyle/demo-bettermfwebsite.xhtml).
+It's also worth comparing the outputs of Downstyle
+and [BetterMotherfuckingWebsite](http://waldyrious.github.io/downstyle/demo-bettermfwebsite.xhtml).
 Particularly, note the differences in the `<table>`, `<blockquote>`, `<pre>` and `<form>` elements.
-These demonstrate unstyle's goal of providing a stand-alone stylesheet for 99% of HTML content,
-while remaining quite close to near-unstlyled HTML.
+These demonstrate Downstyle's goal of providing a stand-alone stylesheet for 99% of HTML content,
+while remaining quite close to unstlyled HTML.
 
 <!-- TODO: insert side-by-side screenshots here. -->
 
 ## Details of included CSS rules
 
-**`unstyle`** combines elements from various simple rulesets
+**Downstyle** combines elements from various simple rulesets
 created to demonstrate how only a few minor tweaks to the default HTML styling
 can produce massive improvements in legibility and layout.
 
