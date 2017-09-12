@@ -57,7 +57,7 @@ input[type] { font-family: sans-serif; font-size: 100%; }
 blockquote { padding-left: 1em; margin-left: 0; border-left: 5px solid #ddd; color: #666; }
 
 /* ---------------------------------------------------------------------------------------------- */
-/* Logarithmic size scale for headings (https://github.com/waldyrious/unstyle/issues/30)          */
+/* Logarithmic size scale for headings (https://github.com/waldyrious/downstyle/issues/30)          */
 /* ---------------------------------------------------------------------------------------------- */
 h1 { font-size: 200.00%; /* 2^(5/5) = 2^1 = 2 */ }
 h2 { font-size: 174.11%; /* 2^(4/5) */ }
