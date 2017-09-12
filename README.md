@@ -23,7 +23,7 @@ but fills a different niche:
 **Downstyle**, on the other hand, is intended as a stand-alone style
 — one that pays homage to HTML's natural readability and flexibility
 and attempts to produce readable and visually pleasing output
-while remaining as close as possible to the default look of unstyled HTML.
+while remaining faithful to the default look of unstyled HTML.
 
 It follows the philosophy brilliantly championed by [Fluidity](http://fluidity.sexy),
 [MotherfuckingWebsite.com](http://motherfuckingwebsite.com)
@@ -43,7 +43,7 @@ It's also worth comparing the outputs of Downstyle
 and [BetterMotherfuckingWebsite](http://waldyrious.github.io/downstyle/demo-bettermfwebsite.xhtml).
 Particularly, note the differences in the `<table>`, `<blockquote>`, `<pre>` and `<form>` elements.
 These demonstrate Downstyle's goal of providing a stand-alone stylesheet for 99% of HTML content,
-while remaining quite close to near-unstlyled HTML.
+while remaining quite close to unstlyled HTML.
 
 <!-- TODO: insert side-by-side screenshots here. -->
 
