@@ -35,7 +35,7 @@ h1, h2, h3, h4, h5, h6, b, strong, th { color: #222; } body { color: #333; }
 /* Clean table style table (adapted from http://getskeleton.com)                                  */
 /* ---------------------------------------------------------------------------------------------- */
 table { border-collapse: collapse; font-family: sans-serif; font-size: 90%; }
-table *:not(th):not(td){ font-family: serif; font-size: 1rem; line-height: 1.5; }
+table *:not(th):not(td){ font-family: var(--serif); font-size: 1rem; line-height: 1.5; }
 th, td { padding: 0 .75em; text-align: left; border-bottom: 1px solid #ddd; }
 th { border-bottom-color: #aaa; }
 th:first-child, td:first-child { padding-left: 0; }
@@ -44,7 +44,8 @@ th:last-child, td:last-child { padding-right: 0; }
 /* ---------------------------------------------------------------------------------------------- */
 /* Additional adjustments (my own)                                                                */
 /* ---------------------------------------------------------------------------------------------- */
-body { font-family: 'Book Antiqua', 'Palatino', 'Palatino Linotype', 'URW Palladio L', serif; }
+:root { --serif: 'Book Antiqua', 'Palatino', 'Palatino Linotype', 'URW Palladio L', serif; }
+body { font-family: var(--serif); }
 a[href] { text-decoration: none; } a[href]:hover { text-decoration: underline; }
 a[href], a[href]>b, a[href]>strong { color: RoyalBlue; } /* override "improve contrast" (above) */
 a[href]:visited, a[href]:visited>b, a[href]:visited>strong { color: BlueViolet; }
