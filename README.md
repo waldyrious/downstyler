@@ -21,8 +21,8 @@ but fills a different niche:
   but using hand-picked default styles, rather than reset.css's nuclear approach.
 
 **Downstyle**, on the other hand, is intended as a stand-alone style
-— one that pays homage to HTML's natural readability and flexibility
-and attempts to produce readable and visually pleasing output
+— one that pays homage to HTML's natural readability and flexibility,
+and attempts to produce readable and visually pleasing output,
 while remaining faithful to the default look of unstyled HTML.
 
 It follows the philosophy brilliantly championed by [Fluidity](http://fluidity.sexy),
