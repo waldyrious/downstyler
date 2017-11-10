@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6, b, strong, th { color: #222; } body { color: #333; }
 table { border-collapse: collapse; font-family: sans-serif; font-size: 90%; }
 table *:not(th):not(td){ font-family: var(--serif); font-size: 1rem; line-height: 1.5; }
 th, td { padding-left: .5em; padding-right: 1em; text-align: left; border-bottom: 1px solid #ddd; }
-th, thead, tfoot { background: GhostWhite; font-weight: bold; }
+th, thead, tfoot { background: #eee; font-weight: bold; }
 
 /* ---------------------------------------------------------------------------------------------- */
 /* Additional adjustments (my own)                                                                */
@@ -48,7 +48,7 @@ a[href] { text-decoration: none; } a[href]:hover { text-decoration: underline; }
 a[href], a[href]>b, a[href]>strong { color: RoyalBlue; } /* override "improve contrast" (above) */
 a[href]:visited, a[href]:visited>b, a[href]:visited>strong { color: BlueViolet; }
 pre, code, kbd, samp { padding: 0 .3em; margin: 0 .1em; font-size: 80%; }
-pre, code, kbd, samp { background: GhostWhite; border: 1px solid #ccc; }
+pre, code, kbd, samp { background: #eee; border: 1px solid #ccc; }
 pre > code { border: none; margin: 0; padding: 0; font-size: 100%; }
 textarea { vertical-align: text-top; }
 textarea, input[type=text], input:not([type]) { font-family: monospace; font-size: 80%; }
