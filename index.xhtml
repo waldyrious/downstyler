@@ -115,26 +115,6 @@
               h1, h2, h3, h4, h5, h6 { text-align: initial; }
             &lt;/style&gt;'
           )">bookify</a>
-        <a href="javascript:document.body.removeAttribute('background');
-          for(ss of document.styleSheets){void(ss.disabled=true)}
-          for(el of document.getElementsByTagName('*')){void(el.removeAttribute('style'));void(el.removeAttribute('bgColor'));}
-          for(tb of document.getElementsByTagName('table')){tb.border=0}
-          for(ft of document.getElementsByTagName('font')){for(at of ft.attributes){ft.removeAttribute(at.name);}}
-          document.head.insertAdjacentHTML('beforeend',
-            '&lt;link rel=&quot;stylesheet&quot; href=&quot;'+
-              (window.location.protocol.startsWith('http')?window.location.protocol:'http:')+
-              '//rawgit.com/waldyrious/downstyle/master/downstyle.css'+
-            '&quot; /&gt;'
-          );
-          document.head.insertAdjacentHTML('beforeend',
-            '&lt;style&gt;
-              html { background: grey; }
-              body { background: white; padding: 1em 5em; margin: 10px auto; border-radius: 2px; text-align: justify; }
-              img { filter:sepia(10%) saturate(80%); }
-              h1, h2, h3, h4, h5, h6 { text-align: initial; }
-              body { font-family: sans-serif; font-weight: 300; }
-            &lt;/style&gt;'
-          )">downstyle+read+sans</a>
       </strong>
     </p>
     <p>✻</p>
