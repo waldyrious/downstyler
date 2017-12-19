@@ -107,11 +107,14 @@
           document.head.insertAdjacentHTML('beforeend',
             '&lt;style&gt;
               html { background: grey; }
-              body { background: white; max-width: 40em; padding: 1em 5em; margin: 10px auto; border-radius: 2px; text-align: justify; }
-              img { filter:sepia(10%) saturate(80%); }
+              body {
+                 background: linear-gradient( to right, #eee, #fff 10%, #fff 90%, #eee 100% );
+                 filter: sepia(5%) saturate(80%) contrast(95%); text-align: justify;
+                 max-width: 40em; padding: 1em 5em; margin: 10px auto; border-radius: 2px; box-shadow: 0 0 6px 2px;
+              }
               h1, h2, h3, h4, h5, h6 { text-align: initial; }
             &lt;/style&gt;'
-          )">downstyle+read</a>
+          )">bookify</a>
         <a href="javascript:document.body.removeAttribute('background');
           for(ss of document.styleSheets){void(ss.disabled=true)}
           for(el of document.getElementsByTagName('*')){void(el.removeAttribute('style'));void(el.removeAttribute('bgColor'));}
