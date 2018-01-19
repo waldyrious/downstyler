@@ -34,10 +34,10 @@ praise the merits of plain HTML as a format for rich documents.
 Here's a live comparison of how plain a variety of HTML markup looks
 [without any styling](http://waldyrious.github.io/downstyle/demo-raw.xhtml)
 and using:
-- [reset](http://waldyrious.github.io/downstyle/demo-reset.xhtml)
-- [sanitize](http://waldyrious.github.io/downstyle/demo-sanitize.xhtml)
-- [normalize](http://waldyrious.github.io/downstyle/demo-normalize.xhtml)
-- [downstyle](http://waldyrious.github.io/downstyle/demo-downstyle.xhtml)
+- [reset](http://waldyrious.github.io/downstyle/comparisons/demo-reset.xhtml)
+- [sanitize](http://waldyrious.github.io/downstyle/comparisons/demo-sanitize.xhtml)
+- [normalize](http://waldyrious.github.io/downstyle/comparisons/demo-normalize.xhtml)
+- [downstyle](http://waldyrious.github.io/downstyle/comparisons/demo-downstyle.xhtml)
 
 It's also worth comparing the outputs of Downstyle
 and [BetterMotherfuckingWebsite](http://waldyrious.github.io/downstyle/demo-bettermfwebsite.xhtml).
