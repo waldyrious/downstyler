@@ -57,7 +57,7 @@ blockquote { padding-left: 1em; margin-left: 0; border-left: 5px solid #ddd; col
 img[align="right"] { margin-left: 1em; } img[align="left"] { margin-right: 1em; }
 
 /* ---------------------------------------------------------------------------------------------- */
-/* Logarithmic size scale for headings (https://github.com/waldyrious/downstyle/issues/30)          */
+/* Logarithmic size scale for headings (https://github.com/waldyrious/downstyler/issues/30)          */
 /* ---------------------------------------------------------------------------------------------- */
 h1 { font-size: 200.00%; /* 2^(5/5) = 2^1 = 2 */ }
 h2 { font-size: 174.11%; /* 2^(4/5) */ }
