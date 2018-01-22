@@ -2,12 +2,12 @@
 
 A tool to fight CSS bloat.
 
-**Visit [the web page](http://waldyrious.github.io/downstyle)**
+**Visit [the web page](http://waldyrious.github.io/downstyler)**
 for a live demo and usage instructions.
 
 ## Differences from existing tools
 
-**Downstyle** takes inspiration in pre-existing similar tools,
+**Downstyler** takes inspiration in pre-existing similar tools,
 but fills a different niche:
 
 - The original [css reset](http://meyerweb.com/eric/tools/css/reset/)
@@ -20,7 +20,7 @@ but fills a different niche:
   is kind of a more comprehensive version of normalize.css, covering all HTML elements,
   but using hand-picked default styles, rather than reset.css's nuclear approach.
 
-**Downstyle**, on the other hand, is intended as a stand-alone style
+**Downstyler**, on the other hand, is intended as a stand-alone style
 — one that pays homage to HTML's natural readability and flexibility,
 and attempts to produce readable and visually pleasing output,
 while remaining faithful to the default look of unstyled HTML.
@@ -32,24 +32,24 @@ which (with various degrees of —ahem— enthusiasm)
 praise the merits of plain HTML as a format for rich documents.
 
 Here's a live comparison of how plain a variety of HTML markup looks
-[without any styling](http://waldyrious.github.io/downstyle/demo-raw.xhtml)
+[without any styling](http://waldyrious.github.io/downstyler/demo-raw.xhtml)
 and using:
-- [reset](http://waldyrious.github.io/downstyle/comparisons/demo-reset.xhtml)
-- [sanitize](http://waldyrious.github.io/downstyle/comparisons/demo-sanitize.xhtml)
-- [normalize](http://waldyrious.github.io/downstyle/comparisons/demo-normalize.xhtml)
-- [downstyle](http://waldyrious.github.io/downstyle/comparisons/demo-downstyle.xhtml)
+- [reset](http://waldyrious.github.io/downstyler/comparisons/demo-reset.xhtml)
+- [sanitize](http://waldyrious.github.io/downstyler/comparisons/demo-sanitize.xhtml)
+- [normalize](http://waldyrious.github.io/downstyler/comparisons/demo-normalize.xhtml)
+- [downstyler](http://waldyrious.github.io/downstyler/comparisons/demo-downstyler.xhtml)
 
 It's also worth comparing the outputs of Downstyle
-and [BetterMotherfuckingWebsite](http://waldyrious.github.io/downstyle/demo-bettermfwebsite.xhtml).
+and [BetterMotherfuckingWebsite](http://waldyrious.github.io/downstyler/demo-bettermfwebsite.xhtml).
 Particularly, note the differences in the `<table>`, `<blockquote>`, `<pre>` and `<form>` elements.
-These demonstrate Downstyle's goal of providing a stand-alone stylesheet for 99% of HTML content,
+These demonstrate Downstyler's goal of providing a stand-alone stylesheet for 99% of HTML content,
 while remaining quite close to unstlyled HTML.
 
 <!-- TODO: insert side-by-side screenshots here. -->
 
 ## Details of included CSS rules
 
-**Downstyle** combines elements from various simple rulesets
+**Downstyler** combines elements from various simple rulesets
 created to demonstrate how only a few minor tweaks to the default HTML styling
 can produce massive improvements in legibility and layout.
 

@@ -2,8 +2,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Downstyle: a tool to fight CSS bloat</title>
-    <link rel="stylesheet" href="http://rawgit.com/waldyrious/downstyle/master/downstyle.css" />
+    <title>Downstyler: a tool to fight CSS bloat</title>
+    <link rel="stylesheet" href="http://rawgit.com/waldyrious/downstyler/master/downstyler.css" />
     <style>
       body {
         text-align: center;
@@ -38,12 +38,12 @@
     </style>
   </head>
   <body>
-    <h1>Downstyle</h1>
+    <h1>Downstyler</h1>
     <p class="subtitle">
       A tool to fight CSS bloat.
     </p>
     <p>
-      Learn more in the <a href="https://github.com/waldyrious/downstyle#readme">README</a>.
+      Learn more in the <a href="https://github.com/waldyrious/downstyler#readme">README</a>.
     </p>
     <h2>Usage</h2>
     <strong id="bookmarklet">
@@ -55,7 +55,7 @@
         document.head.insertAdjacentHTML('beforeend',
           '&lt;link rel=&quot;stylesheet&quot; href=&quot;'+
             (window.location.protocol.startsWith('http')?window.location.protocol:'http:')+
-            '//rawgit.com/waldyrious/downstyle/master/downstyle.css'+
+            '//rawgit.com/waldyrious/downstyler/master/downstyler.css'+
           '&quot; /&gt;'
         )">downstyle!</a>
     </strong>
@@ -85,7 +85,7 @@
           document.head.insertAdjacentHTML('beforeend',
             '&lt;link rel=&quot;stylesheet&quot; href=&quot;'+
               (window.location.protocol.startsWith('http')?window.location.protocol:'http:')+
-              '//rawgit.com/waldyrious/downstyle/master/downstyle.css'+
+              '//rawgit.com/waldyrious/downstyler/master/downstyler.css'+
             '&quot; /&gt;'
           );
           document.head.insertAdjacentHTML('beforeend',
@@ -101,7 +101,7 @@
           document.head.insertAdjacentHTML('beforeend',
             '&lt;link rel=&quot;stylesheet&quot; href=&quot;'+
               (window.location.protocol.startsWith('http')?window.location.protocol:'http:')+
-              '//rawgit.com/waldyrious/downstyle/master/downstyle.css'+
+              '//rawgit.com/waldyrious/downstyler/master/downstyler.css'+
             '&quot; /&gt;'
           );
           document.head.insertAdjacentHTML('beforeend',
@@ -119,23 +119,23 @@
     </p>
     <p>✻</p>
     <p>
-      Downstyle can also be used as a regular stylesheet.
+      Downstyler can also be used as a regular stylesheet.
       <br />
       Download
-      <strong><a href="https://raw.githubusercontent.com/waldyrious/downstyle/master/downstyle.css">
-        downstyle.css
+      <strong><a href="https://raw.githubusercontent.com/waldyrious/downstyler/master/downstyler.css">
+        downstyler.css
       </a></strong>,
       or include the following code in your HTML:
       <br />
       <pre class="highlight">&lt;link rel=<span class="str">"stylesheet"</span><br/><!--
-      -->href=<span class="str">"http://rawgit.com/waldyrious/downstyle/master/downstyle.css"</span> /&gt;</pre>
+      -->href=<span class="str">"http://rawgit.com/waldyrious/downstyler/master/downstyler.css"</span> /&gt;</pre>
     </p>
     <h2>Demo</h2>
     <p>
-      For a more com&#173;pre&#173;hen&#173;sive dem&#173;on&#173;stra&#173;tion of how pages using Downstyle look like,
+      For a more com&#173;pre&#173;hen&#173;sive dem&#173;on&#173;stra&#173;tion of how pages using Downstyler look like,
       <br/>
       compare <a href="comparisons/demo-raw.xhtml">this demo page using no styling at all</a>,
-      with <a href="comparisons/demo-downstyle.xhtml">the same page using Downstyle</a>.
+      with <a href="comparisons/demo-downstyler.xhtml">the same page using Downstyler</a>.
     </p>
   </body>
 </html>
