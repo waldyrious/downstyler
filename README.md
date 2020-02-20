@@ -1,4 +1,4 @@
-# Downstyle
+# Downstyler
 
 A tool to fight CSS bloat.
 
@@ -39,7 +39,7 @@ and using:
 - [normalize](http://waldyrious.github.io/downstyler/comparisons/demo-normalize.xhtml)
 - [downstyler](http://waldyrious.github.io/downstyler/comparisons/demo-downstyler.xhtml)
 
-It's also worth comparing the outputs of Downstyle
+It's also worth comparing the outputs of Downstyler
 and [BetterMotherfuckingWebsite](http://waldyrious.github.io/downstyler/demo-bettermfwebsite.xhtml).
 Particularly, note the differences in the `<table>`, `<blockquote>`, `<pre>` and `<form>` elements.
 These demonstrate Downstyler's goal of providing a stand-alone stylesheet for 99% of HTML content,
