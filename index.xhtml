@@ -8,17 +8,20 @@
     <style>
       body {
         text-align: center;
+        hyphens: auto;
+      }
+      p:not([class]) {
+        font-family: sans-serif;
       }
       .subtitle {
         color: grey;
         font-size: 1.3em;
         font-style: italic;
       }
-      #bookmarklet {
-        font-family: sans-serif;
+      .bookmarklet {
         line-height: 2em;
       }
-      #bookmarklet a {
+      .bookmarklet a {
         border: 1px solid silver;
         border-radius: 0.3em;
         background-color: #eee;
@@ -33,9 +36,6 @@
       pre.highlight .str {
         color: Coral;
       }
-      #disclaimer {
-        color: grey;
-      }
     </style>
   </head>
   <body>
@@ -47,26 +47,25 @@
       Learn more in the <a href="https://github.com/waldyrious/downstyler#readme">README</a>.
     </p>
     <h2>Usage</h2>
-    <strong id="bookmarklet">
-      <a href="javascript:document.body.removeAttribute('background');
-        for(ss of document.styleSheets){void(ss.disabled=true)}
-        for(el of document.getElementsByTagName('*')){void(el.removeAttribute('style'));void(el.removeAttribute('bgColor'));}
-        for(tb of document.getElementsByTagName('table')){tb.border=0}
-        for(ft of document.getElementsByTagName('font')){for(at of ft.attributes){ft.removeAttribute(at.name);}}
-        document.head.insertAdjacentHTML('beforeend',
-          '&lt;link rel=&quot;stylesheet&quot; href=&quot;'+
-            (window.location.protocol.startsWith('http')?window.location.protocol:'http:')+
-            '//raw.githack.com/waldyrious/downstyler/master/downstyler.css'+
-          '&quot; /&gt;'
-        )">downstyle!</a>
-    </strong>
+    <p>
+      <strong class="bookmarklet">
+        <a href="javascript:document.body.removeAttribute('background');
+          for(ss of document.styleSheets){void(ss.disabled=true)}
+          for(el of document.getElementsByTagName('*')){void(el.removeAttribute('style'));void(el.removeAttribute('bgColor'));}
+          for(tb of document.getElementsByTagName('table')){tb.border=0}
+          for(ft of document.getElementsByTagName('font')){for(at of ft.attributes){ft.removeAttribute(at.name);}}
+          document.head.insertAdjacentHTML('beforeend',
+            '&lt;link rel=&quot;stylesheet&quot; href=&quot;'+
+              (window.location.protocol.startsWith('http')?window.location.protocol:'http:')+
+              '//raw.githack.com/waldyrious/downstyler/master/downstyler.css'+
+            '&quot; /&gt;'
+          )">downstyle!</a>
+      </strong>
+    </p>
     <p>
       Just drag the link above to your browser's bookmarks toolbar.
       <br />
-      You can then use it to instantly simplify the styling of any page on the web.
-      <span id="disclaimer" title="Beware: this will expose some pretty broken layouts that were camouflaged with CSS!">
-        ⚠
-      </span>
+      You can then use it to instantly strip down the styling of any page on the web.
       <br />
       (Hint: click the link to try it on this page!)
     </p>
@@ -77,7 +76,7 @@
       as well as a reading mode that emulates a "paper sheet" look:
     </p>
     <p>
-      <strong id="bookmarklet">
+      <strong class="bookmarklet">
         <a href="javascript:document.body.removeAttribute('background');
           for(ss of document.styleSheets){void(ss.disabled=true)}
           for(el of document.getElementsByTagName('*')){void(el.removeAttribute('style'));void(el.removeAttribute('bgColor'));}
@@ -124,16 +123,17 @@
       <br />
       Download
       <strong><a href="https://raw.githubusercontent.com/waldyrious/downstyler/master/downstyler.css">
-        downstyler.css
-      </a></strong>,
-      or include the following code in your HTML:
+        downstyler.css<!--
+      --></a></strong>,
+      or include the following code in your HTML<br />
+      (courtesy of the <a href="https://raw.githack.com/">RawGitHack</a> service):
       <br />
       <pre class="highlight">&lt;link rel=<span class="str">"stylesheet"</span><br/><!--
       -->href=<span class="str">"https://raw.githack.com/waldyrious/downstyler/master/downstyler.css"</span> /&gt;</pre>
     </p>
     <h2>Demo</h2>
     <p>
-      For a more com&#173;pre&#173;hen&#173;sive dem&#173;on&#173;stra&#173;tion of how pages using Downstyler look like,
+      For a more comprehensive demonstration of how pages using Downstyler look like,
       <br/>
       compare <a href="comparisons/demo-raw.xhtml">this demo page using no styling at all</a>,
       with <a href="comparisons/demo-downstyler.xhtml">the same page using Downstyler</a>.
