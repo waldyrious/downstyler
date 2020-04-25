@@ -1,16 +1,16 @@
 /* ---------------------------------------------------------------------------------------------- */
-/* Make HTML more responsive (adapted from http://fluidity.sexy)                                  */
+/* Make HTML more responsive (adapted from https://fluidity.sexy ← note: broken link)             */
 /* ---------------------------------------------------------------------------------------------- */
 img, canvas, iframe, video, svg, select, textarea { max-width: 100%; }
 pre { overflow-x: auto; }
 
 /* ---------------------------------------------------------------------------------------------- */
-/* Restore normal viewport size on mobile browsers (www.w3.org/TR/css-device-adapt/)              */
+/* Restore normal viewport size on mobile browsers (https://www.w3.org/TR/css-device-adapt/)      */
 /* ---------------------------------------------------------------------------------------------- */
 @viewport { width: device-width; initial-scale: 1; }
 
 /* ---------------------------------------------------------------------------------------------- */
-/* Box-model fix (adapted from https://css-tricks.com/box-sizing)                                 */
+/* Box-model fix (adapted from https://css-tricks.com/box-sizing/)                                */
 /* ---------------------------------------------------------------------------------------------- */
 html { box-sizing: border-box; } *, *:before, *:after { box-sizing: inherit; }
 
@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5, h6 { margin-top: 1em; margin-bottom: 0.5em; }
 body { line-height: 1.5; margin: 0 auto; max-width: 40em; padding: 1em; }
 
 /* ---------------------------------------------------------------------------------------------- */
-/* Improved contrast (adapted from http://jgthms.com/web-design-in-4-minutes/)                    */
+/* Improved contrast (adapted from https://jgthms.com/web-design-in-4-minutes/)                   */
 /* ---------------------------------------------------------------------------------------------- */
 h1, h2, h3, h4, h5, h6, b, strong, th { color: #222; } body { color: #333; }
 

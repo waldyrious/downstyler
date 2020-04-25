@@ -2,7 +2,7 @@
 
 A tool to fight CSS bloat.
 
-**Visit [the web page](http://waldyrious.github.io/downstyler)**
+**Visit [the web page](https://waldyrious.github.io/downstyler)**
 for a live demo and usage instructions.
 
 ## Differences from existing tools
@@ -10,7 +10,7 @@ for a live demo and usage instructions.
 **Downstyler** takes inspiration in pre-existing similar tools,
 but fills a different niche:
 
-- The original [css reset](http://meyerweb.com/eric/tools/css/reset/)
+- The original [css reset](https://meyerweb.com/eric/tools/css/reset/)
   completely wipes out all of the browser's default styles
   to provide a clean slate upon which custom stylesheets can be built;
 - [normalize.css](https://necolas.github.io/normalize.css/)
@@ -25,22 +25,23 @@ but fills a different niche:
 and attempts to produce readable and visually pleasing output,
 while remaining faithful to the default look of unstyled HTML.
 
-It follows the philosophy brilliantly championed by [Fluidity](http://fluidity.sexy),
-[MotherfuckingWebsite.com](http://motherfuckingwebsite.com)
+It follows the philosophy brilliantly championed by
+[Fluidity](https://web.archive.org/web/20180212152503/https://fluidity.sexy),
+[MotherfuckingWebsite.com](https://motherfuckingwebsite.com)
 and [BetterMotherfuckingWebsite.com](http://bettermotherfuckingwebsite.com),
 which (with various degrees of —ahem— enthusiasm)
 praise the merits of plain HTML as a format for rich documents.
 
 Here's a live comparison of how plain a variety of HTML markup looks
-[without any styling](http://waldyrious.github.io/downstyler/demo-raw.xhtml)
+[without any styling](https://waldyrious.github.io/downstyler/demo-raw.xhtml)
 and using:
-- [reset](http://waldyrious.github.io/downstyler/comparisons/demo-reset.xhtml)
-- [sanitize](http://waldyrious.github.io/downstyler/comparisons/demo-sanitize.xhtml)
-- [normalize](http://waldyrious.github.io/downstyler/comparisons/demo-normalize.xhtml)
-- [downstyler](http://waldyrious.github.io/downstyler/comparisons/demo-downstyler.xhtml)
+- [reset](https://waldyrious.github.io/downstyler/comparisons/demo-reset.xhtml)
+- [sanitize](https://waldyrious.github.io/downstyler/comparisons/demo-sanitize.xhtml)
+- [normalize](https://waldyrious.github.io/downstyler/comparisons/demo-normalize.xhtml)
+- [downstyler](https://waldyrious.github.io/downstyler/comparisons/demo-downstyler.xhtml)
 
 It's also worth comparing the outputs of Downstyler
-and [BetterMotherfuckingWebsite](http://waldyrious.github.io/downstyler/demo-bettermfwebsite.xhtml).
+and [BetterMotherfuckingWebsite](https://waldyrious.github.io/downstyler/demo-bettermfwebsite.xhtml).
 Particularly, note the differences in the `<table>`, `<blockquote>`, `<pre>` and `<form>` elements.
 These demonstrate Downstyler's goal of providing a stand-alone stylesheet for 99% of HTML content,
 while remaining quite close to unstlyled HTML.
@@ -55,7 +56,7 @@ can produce massive improvements in legibility and layout.
 
 The origin and motivation of each ruleset is detailed below:
 
-- From **[Fluidity](http://fluidity.sexy)**,
+- From **[Fluidity](https://web.archive.org/web/20180212152503/https://fluidity.sexy)**,
   by Adam Morse ([@mrmrs](https://github.com/mrmrs)):  
   Make HTML more responsive:
   > HTML is **almost** 100% responsive by default. These 247 bytes of css fix the 'almost' part.
@@ -86,7 +87,7 @@ The origin and motivation of each ruleset is detailed below:
   ```css
   html { box-sizing: border-box; } *, *:before, *:after { box-sizing: inherit; }
   ```
-   
+
 - From **[CSS Tricks](https://css-tricks.com/molten-leading-css/)**,
   by Chris Coyier ([@chriscoyier](https://github.com/chriscoyier))
   from an original idea by Tim Brown ([@tbrown](https://github.com/tbrown)):  
@@ -96,7 +97,7 @@ The origin and motivation of each ruleset is detailed below:
   @media (min-width: 600px) { html { font-size: calc(0.4vw + 13.6px) } }
   ```
   These rules allow text to resize dynamically to adapt to the width of the container.
-  It's the same concept as [flowtype.js](http://simplefocus.com/flowtype/),
+  It's the same concept as [flowtype.js](https://simplefocus.com/flowtype/),
   but implemented entirely in CSS.
 
 - From **[Better Motherfucking Website](http://bettermotherfuckingwebsite.com)**, by Drew McConville ([@drewmcc](https://github.com/drewmcc)):
