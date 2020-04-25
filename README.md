@@ -93,8 +93,7 @@ The origin and motivation of each ruleset is detailed below:
   from an original idea by Tim Brown ([@tbrown](https://github.com/tbrown)):  
   Size text according to screen width
   ```css
-  html { font-size: 16px; }
-  @media (min-width: 600px) { html { font-size: calc(0.4vw + 13.6px) } }
+  html { font-size: clamp(0.9rem, calc(13px + 0.5vw), 1.1rem); }
   ```
   These rules allow text to resize dynamically to adapt to the width of the container.
   It's the same concept as [flowtype.js](https://simplefocus.com/flowtype/),

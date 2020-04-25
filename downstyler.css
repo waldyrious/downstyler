@@ -17,8 +17,7 @@ html { box-sizing: border-box; } *, *:before, *:after { box-sizing: inherit; }
 /* ---------------------------------------------------------------------------------------------- */
 /* Size text according to screen width (adapted from https://css-tricks.com/molten-leading-css/)  */
 /* ---------------------------------------------------------------------------------------------- */
-html { font-size: 16px; }
-@media (min-width: 600px) { html { font-size: calc(13px + 0.5vw) } }
+html { font-size: clamp(0.9rem, calc(13px + 0.5vw), 1.1rem); }
 
 /* ---------------------------------------------------------------------------------------------- */
 /* Improved typography (adapted from http://bettermotherfuckingwebsite.com)                       */
