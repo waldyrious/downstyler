@@ -28,7 +28,7 @@ body { line-height: 1.5; margin: 0 auto; max-width: 40em; padding: 1em; }
 /* ---------------------------------------------------------------------------------------------- */
 /* Improved contrast (adapted from https://jgthms.com/web-design-in-4-minutes/)                   */
 /* ---------------------------------------------------------------------------------------------- */
-h1, h2, h3, h4, h5, h6, b, strong, th { color: #222; } body { color: #333; }
+b, strong, th { color: #222; } body { color: #333; }
 
 /* ---------------------------------------------------------------------------------------------- */
 /* Clean table style table (adapted from http://getskeleton.com)                                  */
@@ -58,9 +58,9 @@ img[align="right"] { margin-left: 1em; } img[align="left"] { margin-right: 1em; 
 /* ---------------------------------------------------------------------------------------------- */
 /* Logarithmic size scale for headings (https://github.com/waldyrious/downstyler/issues/30)       */
 /* ---------------------------------------------------------------------------------------------- */
-h1 { font-size: 200.00%; /* 2^(5/5) = 2^1 = 2 */ }
-h2 { font-size: 174.11%; /* 2^(4/5) */ }
-h3 { font-size: 151.57%; /* 2^(3/5) */ }
-h4 { font-size: 131.95%; /* 2^(2/5) */ }
-h5 { font-size: 114.87%; /* 2^(1/5) */ }
-h6 { font-size: 100.00%; /* 2^(0/5) = 2^0 = 1 */ }
+h1 { color: #111; font-size: 200.00%; /* 2^(6/6) */ }
+h2 { color: #222; font-size: 178.18%; /* 2^(5/6) */ }
+h3 { color: #333; font-size: 158.74%; /* 2^(4/6) */ }
+h4 { color: #444; font-size: 141.42%; /* 2^(3/6) */ }
+h5 { color: #555; font-size: 125.99%; /* 2^(2/6) */ }
+h6 { color: #666; font-size: 112.25%; /* 2^(1/6) */ }
