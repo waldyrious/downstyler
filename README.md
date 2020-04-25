@@ -32,16 +32,15 @@ and [BetterMotherfuckingWebsite.com](http://bettermotherfuckingwebsite.com),
 which (with various degrees of —ahem— enthusiasm)
 praise the merits of plain HTML as a format for rich documents.
 
-Here's a live comparison of how plain a variety of HTML markup looks
-[without any styling](https://waldyrious.github.io/downstyler/demo-raw.xhtml)
-and using:
+Here's a live comparison of how plain a variety of HTML markup looks with the various "base" stylesheets:
+- [no style (browser default)](https://waldyrious.github.io/downstyler/comparison/demo-raw.xhtml)
 - [reset](https://waldyrious.github.io/downstyler/comparisons/demo-reset.xhtml)
 - [sanitize](https://waldyrious.github.io/downstyler/comparisons/demo-sanitize.xhtml)
 - [normalize](https://waldyrious.github.io/downstyler/comparisons/demo-normalize.xhtml)
 - [downstyler](https://waldyrious.github.io/downstyler/comparisons/demo-downstyler.xhtml)
 
 It's also worth comparing the outputs of Downstyler
-and [BetterMotherfuckingWebsite](https://waldyrious.github.io/downstyler/demo-bettermfwebsite.xhtml).
+and [BetterMotherfuckingWebsite](https://waldyrious.github.io/downstyler/comparisons/demo-bettermfwebsite.xhtml).
 Particularly, note the differences in the `<table>`, `<blockquote>`, `<pre>` and `<form>` elements.
 These demonstrate Downstyler's goal of providing a stand-alone stylesheet for 99% of HTML content,
 while remaining quite close to unstlyled HTML.
