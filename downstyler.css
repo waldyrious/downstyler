@@ -45,7 +45,17 @@ th, td { padding-left: .5em; padding-right: 1em; text-align: left; }
 th, thead, tfoot { background: #eee; font-weight: bold; }
 
 /* ---------------------------------------------------------------------------------------------- */
-/* Additional adjustments (my own)                                                                */
+/* Logarithmic size scale for headings (https://github.com/waldyrious/downstyler/issues/30)       */
+/* ---------------------------------------------------------------------------------------------- */
+h1 { color: #111; font-size: 200.00%; /* 2^(6/6) */ }
+h2 { color: #222; font-size: 178.18%; /* 2^(5/6) */ }
+h3 { color: #333; font-size: 158.74%; /* 2^(4/6) */ }
+h4 { color: #444; font-size: 141.42%; /* 2^(3/6) */ }
+h5 { color: #555; font-size: 125.99%; /* 2^(2/6) */ }
+h6 { color: #666; font-size: 112.25%; /* 2^(1/6) */ }
+
+/* ---------------------------------------------------------------------------------------------- */
+/* Additional adjustments.                                                                        */
 /* ---------------------------------------------------------------------------------------------- */
 a[href], a[href]>b, a[href]>strong { color: RoyalBlue; } /* override "improve contrast" (above) */
 a[href]:visited, a[href]:visited>b, a[href]:visited>strong { color: BlueViolet; }
@@ -57,13 +67,3 @@ textarea, input[type=text], input:not([type]) { font-family: monospace; font-siz
 input[type] { font-family: sans-serif; font-size: 100%; }
 blockquote { padding-left: 1em; margin-left: 0; border-left: 5px solid #ddd; color: #666; }
 img[align="right"] { margin-left: 1em; } img[align="left"] { margin-right: 1em; }
-
-/* ---------------------------------------------------------------------------------------------- */
-/* Logarithmic size scale for headings (https://github.com/waldyrious/downstyler/issues/30)       */
-/* ---------------------------------------------------------------------------------------------- */
-h1 { color: #111; font-size: 200.00%; /* 2^(6/6) */ }
-h2 { color: #222; font-size: 178.18%; /* 2^(5/6) */ }
-h3 { color: #333; font-size: 158.74%; /* 2^(4/6) */ }
-h4 { color: #444; font-size: 141.42%; /* 2^(3/6) */ }
-h5 { color: #555; font-size: 125.99%; /* 2^(2/6) */ }
-h6 { color: #666; font-size: 112.25%; /* 2^(1/6) */ }
