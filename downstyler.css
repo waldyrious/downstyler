@@ -29,8 +29,8 @@ html { font-size: clamp(1rem, calc(13px + 0.5vw), 1.2rem); }
 /* ---------------------------------------------------------------------------------------------- */
 /* Improved typography (adapted from http://bettermotherfuckingwebsite.com)                       */
 /* ---------------------------------------------------------------------------------------------- */
-h1, h2, h3, h4, h5, h6 { margin-top: 1em; margin-bottom: 0.5em; }
 body { line-height: 1.5; margin: 0 auto; max-width: 40em; padding: 1em; }
+h1, h2, h3, h4, h5, h6 { margin-top: 1em; margin-bottom: 0.5em; line-height: 1 }
 
 /* ---------------------------------------------------------------------------------------------- */
 /* Improved contrast (adapted from https://jgthms.com/web-design-in-4-minutes/)                   */
