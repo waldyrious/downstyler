@@ -1,4 +1,10 @@
+/* ---------------------------------------------------------------------------------------------- */
+/* Use Libertinus Serif as the default font (plus workaround for proper bold instead of semibold) */
+/* ---------------------------------------------------------------------------------------------- */
 @import url('https://fontlibrary.org/face/libertinus-serif');
+body { font-family: 'Libertinus Serif', serif; }
+b, strong, th, h1, h2, h3, h4, h5, h6 { font-family: LibertinusSerifBold; }
+
 /* ---------------------------------------------------------------------------------------------- */
 /* Make HTML more responsive (adapted from https://fluidity.sexy ← note: broken link)             */
 /* ---------------------------------------------------------------------------------------------- */
@@ -41,7 +47,6 @@ th, thead, tfoot { background: #eee; font-weight: bold; }
 /* ---------------------------------------------------------------------------------------------- */
 /* Additional adjustments (my own)                                                                */
 /* ---------------------------------------------------------------------------------------------- */
-body { font-family: 'Libertinus Serif', serif; }
 a[href] { text-decoration: none; } a[href]:hover { text-decoration: underline; }
 a[href], a[href]>b, a[href]>strong { color: RoyalBlue; } /* override "improve contrast" (above) */
 a[href]:visited, a[href]:visited>b, a[href]:visited>strong { color: BlueViolet; }
