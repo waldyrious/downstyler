@@ -1,11 +1,4 @@
 /* ---------------------------------------------------------------------------------------------- */
-/* Use Libertinus Serif as the default font (plus workaround for proper bold instead of semibold) */
-/* ---------------------------------------------------------------------------------------------- */
-@import url('https://fontlibrary.org/face/libertinus-serif');
-body { font-family: 'Libertinus Serif', serif; }
-b, strong, th, h1, h2, h3, h4, h5, h6 { font-family: LibertinusSerifBold; }
-
-/* ---------------------------------------------------------------------------------------------- */
 /* Make HTML more responsive (adapted from https://fluidity.sexy ← note: broken link)             */
 /* ---------------------------------------------------------------------------------------------- */
 img, canvas, iframe, video, svg, select, textarea { max-width: 100%; }
@@ -57,7 +50,8 @@ h6 { color: #666; font-size: 112.25%; /* 2^(1/6) */ }
 /* ---------------------------------------------------------------------------------------------- */
 /* Additional adjustments.                                                                        */
 /* ---------------------------------------------------------------------------------------------- */
-a[href], a[href]>b, a[href]>strong { color: RoyalBlue; } /* override "improve contrast" (above) */
+body { font-family: 'Libertinus Serif', 'Crimson Text', serif; }
+a[href], a[href]>b, a[href]>strong { color: RoyalBlue; } /* override "improved contrast" (above) */
 a[href]:visited, a[href]:visited>b, a[href]:visited>strong { color: BlueViolet; }
 pre, code, kbd, samp, tt { padding: .1em .3em; margin: 0 .1em; font-size: 80%; }
 pre, code, kbd, samp, tt { background: #eee; border: 1px solid #ccc; }
