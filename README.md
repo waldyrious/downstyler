@@ -68,13 +68,6 @@ The origin and motivation of each ruleset is detailed below:
   to behave like the rest of the basic HTML elements
   like, say, paragraphs, which flow the text as the window resizes.
 
-- From **[W3C's CSS Device Adaptation Module Level 1]
-  (https://www.w3.org/TR/css-device-adapt/#width-and-height-properties)**:
-  Restore normal viewport size on mobile browsers:
-  ```css
-  @viewport { width: device-width; initial-scale: 1; }
-  ```
-
 - From **[CSS Tricks](https://css-tricks.com/box-sizing)**,
   by Marie Mosley ([@mariemosley](https://github.com/mariemosley)):  
   Adjust the box model to match [intuitive expectations]

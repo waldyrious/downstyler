@@ -5,11 +5,6 @@ img, canvas, iframe, video, svg, select, textarea { max-width: 100%; }
 pre { overflow-x: auto; }
 
 /* ---------------------------------------------------------------------------------------------- */
-/* Restore normal viewport size on mobile browsers (https://www.w3.org/TR/css-device-adapt/)      */
-/* ---------------------------------------------------------------------------------------------- */
-@viewport { width: device-width; initial-scale: 1; }
-
-/* ---------------------------------------------------------------------------------------------- */
 /* Box-model fix (adapted from https://css-tricks.com/box-sizing/)                                */
 /* ---------------------------------------------------------------------------------------------- */
 html { box-sizing: border-box; } *, *:before, *:after { box-sizing: inherit; }
