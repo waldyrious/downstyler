@@ -58,5 +58,5 @@ blockquote { padding-left: 1em; margin-left: 0; border-left: 5px solid #ddd; col
 img[align="right"] { margin-left: 1em; } img[align="left"] { margin-right: 1em; }
 figcaption { font: caption; color: #999; font-size: 75% !important; }
 /* Prevent blowing up SVG images that are meant to be small*/
-*[class*=social i] svg, *[class*=icon i] svg { max-height: 30px; }
+*[class*=social i] svg, *[class*=icon i] svg, svg[class*=icon i] { max-height: 30px; }
 *[class*=logo i] svg, *[id*=logo i] svg { max-width: 100px; }
