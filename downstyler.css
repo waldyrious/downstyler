@@ -23,7 +23,9 @@ h1, h2, h3, h4, h5, h6 { margin-top: 1em; margin-bottom: 0.5em; line-height: 1.2
 /* ---------------------------------------------------------------------------------------------- */
 /* Improved contrast (adapted from https://jgthms.com/web-design-in-4-minutes/)                   */
 /* ---------------------------------------------------------------------------------------------- */
-b, strong, th { color: #222; } body { color: #333; }
+body { color: #333; }
+:not(a[href]) b, :not(a[href]) strong, th { color: #222; }
+a[href] { color: RoyalBlue; } a[href]:visited { color: BlueViolet; }
 
 /* ---------------------------------------------------------------------------------------------- */
 /* Clean table style table (adapted from http://getskeleton.com)                                  */
@@ -46,8 +48,6 @@ h6 { color: #666; font-size: 112.25%; /* 2^(1/6) */ }
 /* Additional adjustments.                                                                        */
 /* ---------------------------------------------------------------------------------------------- */
 body { font-family: 'Libertinus Serif', 'Crimson Text', serif; }
-a[href], a[href]>b, a[href]>strong { color: RoyalBlue; } /* override "improved contrast" (above) */
-a[href]:visited, a[href]:visited>b, a[href]:visited>strong { color: BlueViolet; }
 pre, code, kbd, samp, tt { padding: .1em .3em; margin: 0 .1em; font-size: 80%; }
 pre, code, kbd, samp, tt { background: #eee; border: 1px solid #ccc; }
 pre > code { border: none; margin: 0; padding: 0; font-size: 100%; }
