@@ -31,7 +31,7 @@ a[href] { color: RoyalBlue; } a[href]:visited { color: BlueViolet; }
 /* Clean table style table (adapted from http://getskeleton.com)                                  */
 /* ---------------------------------------------------------------------------------------------- */
 table { border-collapse: collapse; }
-th, td { padding-left: .5em; padding-right: 1em; text-align: left; }
+th, td { padding-left: .5em; padding-right: 1em; text-align: left; border: 1px solid #ddd; }
 th, thead, tfoot { background: #eee; font-weight: bold; }
 
 /* ---------------------------------------------------------------------------------------------- */
