@@ -55,7 +55,7 @@
           for(tb of document.getElementsByTagName('table')){tb.border=0}
           for(ft of document.getElementsByTagName('font')){for(at of ft.attributes){ft.removeAttribute(at.name);}}
           document.head.insertAdjacentHTML('beforeend',
-            '&lt;link rel=&quot;stylesheet&quot; href=&quot;'+
+            '&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;'+
               (window.location.protocol.startsWith('http')?window.location.protocol:'http:')+
               '//raw.githack.com/waldyrious/downstyler/master/downstyler.css'+
             '&quot; /&gt;'
@@ -83,7 +83,7 @@
           for(tb of document.getElementsByTagName('table')){tb.border=0}
           for(ft of document.getElementsByTagName('font')){for(at of ft.attributes){ft.removeAttribute(at.name);}}
           document.head.insertAdjacentHTML('beforeend',
-            '&lt;link rel=&quot;stylesheet&quot; href=&quot;'+
+            '&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot href=&quot;'+
               (window.location.protocol.startsWith('http')?window.location.protocol:'http:')+
               '//raw.githack.com/waldyrious/downstyler/master/downstyler.css'+
             '&quot; /&gt;'
