@@ -47,7 +47,7 @@ h6 { color: #666; font-size: 112.25%; /* 2^(1/6) */ }
 /* ---------------------------------------------------------------------------------------------- */
 /* Additional adjustments.                                                                        */
 /* ---------------------------------------------------------------------------------------------- */
-body { font-family: 'Libertinus Serif', 'Crimson Text', serif; }
+body { font-family: 'Libertinus Serif', 'Crimson Text', serif; text-align: justify; hyphens: auto; }
 pre, code, kbd, samp, tt { padding: .1em .3em; margin: 0 .1em; font-size: 80%; }
 pre, code, kbd, samp, tt { background: #eee; border: 1px solid #ccc; }
 pre > code { border: none; margin: 0; padding: 0; font-size: 100%; }
