@@ -1,44 +1,33 @@
 /* ------------------------------------------------------------------------------------------------------------------ */
 /* Make HTML more responsive (adapted from https://github.com/mrmrs/fluidity)                                         */
 /* ------------------------------------------------------------------------------------------------------------------ */
+
 img, canvas, iframe, video, svg, select, textarea { max-width: 100%; height: auto; }
 pre { overflow-x: auto; }
 
 /* ------------------------------------------------------------------------------------------------------------------ */
 /* Box-model fix (adapted from https://css-tricks.com/box-sizing/)                                                    */
 /* ------------------------------------------------------------------------------------------------------------------ */
+
 html { box-sizing: border-box; }
 *, *:before, *:after { box-sizing: inherit; }
 
 /* ------------------------------------------------------------------------------------------------------------------ */
-/* Size text according to screen width (adapted from https://css-tricks.com/molten-leading-css/)                      */
+/* Improved typography and prose readability                                                                          */
 /* ------------------------------------------------------------------------------------------------------------------ */
+
+/* Size text according to screen width (adapted from https://css-tricks.com/molten-leading-css/) */
 html { font-size: clamp(1rem, calc(13px + 0.5vw), 1.2rem); }
 
-/* ------------------------------------------------------------------------------------------------------------------ */
-/* Improved text layout and spacing (adapted from http://bettermotherfuckingwebsite.com)                              */
-/* ------------------------------------------------------------------------------------------------------------------ */
-body { line-height: 1.5; margin: 0 auto; max-width: 40em; padding: 1em; }
+/* Improved text layout and spacing (adapted from http://bettermotherfuckingwebsite.com) */
+body { line-height: 1.5; text-align: justify; hyphens: auto; margin: 0 auto; max-width: 40em; padding: 1em; }
 h1, h2, h3, h4, h5, h6 { margin-top: 1em; margin-bottom: 0.5em; line-height: 1.2; }
 
-/* ------------------------------------------------------------------------------------------------------------------ */
-/* Improved contrast (adapted from https://jgthms.com/web-design-in-4-minutes/#color-contrast)                        */
-/* ------------------------------------------------------------------------------------------------------------------ */
+/* Improved contrast (adapted from https://jgthms.com/web-design-in-4-minutes/#color-contrast) */
 body { color: #333; }
 :not(a[href]) b, :not(a[href]) strong, th { color: #222; }
-a[href] { color: RoyalBlue; }
-a[href]:visited { color: BlueViolet; }
 
-/* ------------------------------------------------------------------------------------------------------------------ */
-/* Simple table style                                                                                                 */
-/* ------------------------------------------------------------------------------------------------------------------ */
-table { border-collapse: collapse; }
-th, td { padding-left: .5em; padding-right: 1em; text-align: left; border: 1px solid #ddd; }
-th, thead, tfoot { background: #eee; font-weight: bold; }
-
-/* ------------------------------------------------------------------------------------------------------------------ */
-/* Logarithmic size scale for headings (see https://github.com/waldyrious/downstyler/issues/30)                       */
-/* ------------------------------------------------------------------------------------------------------------------ */
+/* Logarithmic size scale for headings (see https://github.com/waldyrious/downstyler/issues/30) */
 h1 { color: #111; font-size: 200.00%; /* 2^(6/6) */ }
 h2 { color: #222; font-size: 178.18%; /* 2^(5/6) */ }
 h3 { color: #333; font-size: 158.74%; /* 2^(4/6) */ }
@@ -46,17 +35,39 @@ h4 { color: #444; font-size: 141.42%; /* 2^(3/6) */ }
 h5 { color: #555; font-size: 125.99%; /* 2^(2/6) */ }
 h6 { color: #666; font-size: 112.25%; /* 2^(1/6) */ }
 
+/* Use nicer serif fonts, if available */
+body { font-family: 'Libertinus Serif', 'Crimson Text', serif; }
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* Simple table style                                                                                                 */
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+table { border-collapse: collapse; }
+th, td { padding-left: .5em; padding-right: 1em; text-align: left; border: 1px solid #ddd; }
+th, thead, tfoot { background: #eee; font-weight: bold; }
+
 /* ------------------------------------------------------------------------------------------------------------------ */
 /* Additional adjustments                                                                                             */
 /* ------------------------------------------------------------------------------------------------------------------ */
-body { font-family: 'Libertinus Serif', 'Crimson Text', serif; text-align: justify; hyphens: auto; }
+
+/* Softer link colors than the browser defaults */
+a[href] { color: RoyalBlue; }
+a[href]:visited { color: BlueViolet; }
+
+/* Styles for code-related elements */
 pre, code, kbd, samp, tt { padding: .1em .3em; margin: 0 .1em; font-size: 80%; }
 pre, code, kbd, samp, tt { background: #eee; border: 1px solid #ccc; }
 pre > code { border: none; margin: 0; padding: 0; font-size: 100%; }
+
+/* Styles for forms and form inputs */
 textarea { vertical-align: text-top; }
 textarea, input[type=text], input:not([type]) { font-family: monospace; font-size: 80%; }
 input[type] { font-family: sans-serif; font-size: 100%; }
+
+/* Styles for blockquote elements */
 blockquote { padding-left: 1em; margin-left: 0; border-left: 5px solid #ddd; color: #666; }
+
+/* Styles for images and figures */
 img[align="right"] { margin-left: 1em; }
 img[align="left"] { margin-right: 1em; }
 figcaption { font: caption; color: #999; font-size: 75% !important; }
