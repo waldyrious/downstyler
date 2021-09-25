@@ -7,7 +7,8 @@ pre { overflow-x: auto; }
 /* ------------------------------------------------------------------------------------------------------------------ */
 /* Box-model fix (adapted from https://css-tricks.com/box-sizing/)                                                    */
 /* ------------------------------------------------------------------------------------------------------------------ */
-html { box-sizing: border-box; } *, *:before, *:after { box-sizing: inherit; }
+html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }
 
 /* ------------------------------------------------------------------------------------------------------------------ */
 /* Size text according to screen width (adapted from https://css-tricks.com/molten-leading-css/)                      */
@@ -25,7 +26,8 @@ h1, h2, h3, h4, h5, h6 { margin-top: 1em; margin-bottom: 0.5em; line-height: 1.2
 /* ------------------------------------------------------------------------------------------------------------------ */
 body { color: #333; }
 :not(a[href]) b, :not(a[href]) strong, th { color: #222; }
-a[href] { color: RoyalBlue; } a[href]:visited { color: BlueViolet; }
+a[href] { color: RoyalBlue; }
+a[href]:visited { color: BlueViolet; }
 
 /* ------------------------------------------------------------------------------------------------------------------ */
 /* Simple table style                                                                                                 */
@@ -55,8 +57,9 @@ textarea { vertical-align: text-top; }
 textarea, input[type=text], input:not([type]) { font-family: monospace; font-size: 80%; }
 input[type] { font-family: sans-serif; font-size: 100%; }
 blockquote { padding-left: 1em; margin-left: 0; border-left: 5px solid #ddd; color: #666; }
-img[align="right"] { margin-left: 1em; } img[align="left"] { margin-right: 1em; }
+img[align="right"] { margin-left: 1em; }
+img[align="left"] { margin-right: 1em; }
 figcaption { font: caption; color: #999; font-size: 75% !important; }
-*[class*="social"] svg, *[class*="icon"] svg, svg[class*="icon"], img[class*="emoji"][src$=".svg"]
-{ max-height: 30px; } /* Prevent blowing up SVG images that are meant to be small */
+/* Prevent blowing up SVG images that are meant to be small */
+*[class*="social"] svg, *[class*="icon"] svg, svg[class*="icon"], img[class*="emoji"][src$=".svg"] { max-height: 30px; }
 *[class*="logo" i] svg, *[id*="logo" i] svg { max-width: 100px; }
