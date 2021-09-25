@@ -47,6 +47,14 @@ th, td { padding-left: .5em; padding-right: 1em; text-align: left; border: 1px s
 th, thead, tfoot { background: #eee; font-weight: bold; }
 
 /* ------------------------------------------------------------------------------------------------------------------ */
+/* Forms and form inputs (work in progress, see https://github.com/waldyrious/downstyler/issues/5)                    */
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+textarea { vertical-align: text-top; }
+textarea, input[type=text], input:not([type]) { font-family: monospace; font-size: 80%; }
+input[type] { font-family: sans-serif; font-size: 100%; }
+
+/* ------------------------------------------------------------------------------------------------------------------ */
 /* Additional adjustments                                                                                             */
 /* ------------------------------------------------------------------------------------------------------------------ */
 
@@ -58,11 +66,6 @@ a[href]:visited { color: BlueViolet; }
 pre, code, kbd, samp, tt { padding: .1em .3em; margin: 0 .1em; font-size: 80%; }
 pre, code, kbd, samp, tt { background: #eee; border: 1px solid #ccc; }
 pre > code { border: none; margin: 0; padding: 0; font-size: 100%; }
-
-/* Styles for forms and form inputs */
-textarea { vertical-align: text-top; }
-textarea, input[type=text], input:not([type]) { font-family: monospace; font-size: 80%; }
-input[type] { font-family: sans-serif; font-size: 100%; }
 
 /* Styles for blockquote elements */
 blockquote { padding-left: 1em; margin-left: 0; border-left: 5px solid #ddd; color: #666; }
