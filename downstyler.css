@@ -55,6 +55,21 @@ textarea, input[type=text], input:not([type]) { font-family: monospace; font-siz
 input[type] { font-family: sans-serif; font-size: 100%; }
 
 /* ------------------------------------------------------------------------------------------------------------------ */
+/* Images and figures                                                                                                 */
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+/* Add margins to left- and right-aligned images (https://github.com/waldyrious/downstyler/issues/13) */
+img[align="right"] { margin-left: 1em; }
+img[align="left"] { margin-right: 1em; }
+
+/* Figure captions */
+figcaption { font: caption; color: #999; font-size: 75% !important; }
+
+/* Prevent blowing up SVG images that are meant to be small */
+*[class*="social"] svg, *[class*="icon"] svg, svg[class*="icon"], img[class*="emoji"][src$=".svg"] { max-height: 30px; }
+*[class*="logo" i] svg, *[id*="logo" i] svg { max-width: 100px; }
+
+/* ------------------------------------------------------------------------------------------------------------------ */
 /* Additional adjustments                                                                                             */
 /* ------------------------------------------------------------------------------------------------------------------ */
 
@@ -69,11 +84,3 @@ pre > code { border: none; margin: 0; padding: 0; font-size: 100%; }
 
 /* Styles for blockquote elements */
 blockquote { padding-left: 1em; margin-left: 0; border-left: 5px solid #ddd; color: #666; }
-
-/* Styles for images and figures */
-img[align="right"] { margin-left: 1em; }
-img[align="left"] { margin-right: 1em; }
-figcaption { font: caption; color: #999; font-size: 75% !important; }
-/* Prevent blowing up SVG images that are meant to be small */
-*[class*="social"] svg, *[class*="icon"] svg, svg[class*="icon"], img[class*="emoji"][src$=".svg"] { max-height: 30px; }
-*[class*="logo" i] svg, *[id*="logo" i] svg { max-width: 100px; }
