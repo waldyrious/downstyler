@@ -34,7 +34,7 @@ h5 { color: #555; font-size: 125.99%; /* 2^(2/6) */ }
 h6 { color: #666; font-size: 112.25%; /* 2^(1/6) */ }
 
 /* Use nicer serif fonts, if available */
-body { font-family: 'Libertinus Serif', 'Crimson Text', serif; }
+body { font-family: 'Libertinus Serif', 'Crimson Text', FreeSerif, serif; }
 
 /* ------------------------------------------------------------------------------------------------------------------ */
 /* Simple table style                                                                                                 */
