@@ -61,7 +61,7 @@ img[align="right"] { margin-left: 1em; }
 img[align="left"] { margin-right: 1em; }
 
 /* Figure captions */
-figcaption { font: caption; color: #999; font-size: 75% !important; }
+figcaption { font: caption; color: #777; font-size: 75% !important; }
 
 /* Prevent blowing up SVG images that are meant to be small */
 *[class*="social"] svg, *[class*="icon"] svg, svg[class*="icon"], img[class*="emoji"][src$=".svg"] { max-height: 30px; }
