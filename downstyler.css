@@ -41,7 +41,7 @@ body { font-family: 'Libertinus Serif', 'Crimson Text', FreeSerif, serif; }
 /* ------------------------------------------------------------------------------------------------------------------ */
 
 table { border-collapse: collapse; }
-th, td { padding-left: .5em; padding-right: 1em; text-align: left; border: 1px solid #ddd; }
+th, td { padding-left: .5em; padding-right: 1em; text-align: start; border: 1px solid #ddd; }
 th, thead, tfoot { background: #eee; font-weight: bold; }
 
 /* ------------------------------------------------------------------------------------------------------------------ */
