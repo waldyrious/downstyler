@@ -52,6 +52,7 @@ th, thead, tfoot { background: #eee; font-weight: bold; }
 
 textarea { display: block; width: 100%; }
 input, textarea, select, button { font-family: inherit; font-size: 100%; margin: 0.2em 0; }
+select[size]:not([size="1"]) { vertical-align: top; }
 
 /* ------------------------------------------------------------------------------------------------------------------ */
 /* Images and figures                                                                                                 */
