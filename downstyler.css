@@ -50,7 +50,7 @@ th, thead, tfoot { background: #eee; font-weight: bold; }
 /* Forms and form inputs (work in progress, see https://github.com/waldyrious/downstyler/issues/5)                    */
 /* ------------------------------------------------------------------------------------------------------------------ */
 
-textarea { vertical-align: top; }
+textarea { display: block; width: 100%; }
 input, textarea, select, button { font-family: inherit; font-size: 100%; margin: 0.2em 0; }
 
 /* ------------------------------------------------------------------------------------------------------------------ */
