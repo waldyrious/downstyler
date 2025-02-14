@@ -15,8 +15,8 @@ html { box-sizing: border-box; }
 /* ------------------------------------------------------------------------------------------------------------------ */
 
 /* Size text according to screen width (adapted from https://css-tricks.com/molten-leading-css/) */
-/* Min size: 1rem (16px), max size: 1.2rem (19.2px); dynamic size applies between 600px and 1240px. */
-html { font-size: clamp(1rem, calc(13px + 0.5vw), 1.2rem); }
+/* Min size: 1rem (16px), max size: 1.5rem (24px); dynamic size applies between 600px and 2600px. */
+html { font-size: clamp(1rem, calc(13.6px + 0.4vw), 1.5rem); }
 
 /* Improved text layout and spacing (adapted from http://bettermotherfuckingwebsite.com) */
 body { line-height: 1.5; margin: 0 auto; max-width: 40em; padding: 1em; }
