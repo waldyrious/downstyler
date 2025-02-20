@@ -78,7 +78,7 @@ a[href] { color: RoyalBlue; }
 a[href]:visited { color: BlueViolet; }
 
 /* Styles for code-related elements */
-pre, :not(pre) code, kbd, samp, tt { padding: .1em .3em; margin: 0 .1em; font-size: 80%; background: #eee; }
+pre, :not(pre) > code, kbd, samp, tt { padding: .1em .3em; margin: 0 .1em; font-size: 80%; background: #eee; }
 
 /* Styles for blockquote elements */
 blockquote { padding-left: 1em; margin-left: 0; border-left: 5px solid #ddd; color: #666; }
